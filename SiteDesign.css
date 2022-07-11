@@ -128,18 +128,28 @@ body {
     animation-delay: 10s;
     width: 100%;
     height: 100%;
+    min-height: 100%;
+    max-height: 100%;
 }
 
 .card_part.card_part-three {
     z-index: 2;
     background-image: url(Iso3.png);
     animation-delay: 20s;
+    width: 100%;
+    height: 100%;
+    min-height: 100%;
+    max-height: 100%;
 }
 
 .card_part.card_part-four {
     z-index: 1;
     background-image: url(Iso4.png );
     animation-delay: 30s;
+    width: 100%;
+    height: 100%;
+    min-height: 100%;
+    max-height: 100%;
 }
 
 
@@ -180,8 +190,7 @@ body {
     color: #dbdbdb;
     font-size: large;
     position: absolute;
-    top: 12.25%;
-    right: 13.5px;
+    right: 0%;
 }
 
 .Notification {
@@ -336,7 +345,6 @@ body {
     left: 15%;
     top: 35%;
     height: 25%;
-    width: 78%;
     z-index: 10;
 }
 
@@ -385,7 +393,6 @@ body {
     left: 15%;
     top: 67.5%;
     height: 25%;
-    width: 78%;
     z-index: 10;
 }
 
@@ -441,7 +448,10 @@ h2 {
     background: green;
 }
 
-.sidebar {
+.sidebar>* {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
     width: 13.43%;
     height: 24%;
     margin: left;
@@ -450,7 +460,6 @@ h2 {
     transition: 3s;
     color: #f0a953;
     border: 2px solid #f9951b;
-
 }
 
 .sidebarnews {
@@ -502,6 +511,7 @@ h2 {
 .NEWSTEXT {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     color: #b9b9b9;
+    font-size: 0.8vw;
 }
 
 .seemore {
@@ -590,10 +600,9 @@ a.button1 {
     height: 10%;
     cursor: pointer;
     font-family: 'Play', sans-serif;
-    font-size: 20px;
+    margin: 1 0%;
     color: white;
     border: none;
-
     background-image: url("https://assets.codepen.io/3305358/hazard-stripes-wallpaper.jpg");
     background-size: 150%;
     background-position: right 40px;
@@ -605,7 +614,7 @@ a.button1:before {
     height: 2.5%;
     content: 'View 3D Models';
     background: rgba(0, 0, 0, 0.6);
-
+    font-size: 1vw;
     position: absolute;
     transition: 500ms;
 }
@@ -643,10 +652,9 @@ a.button1:focus {
     height: 10%;
     cursor: pointer;
     font-family: 'Play', sans-serif;
-    font-size: 20px;
+    margin: 1 0%;
     color: white;
     border: none;
-
     background-image: url("https://assets.codepen.io/3305358/hazard-stripes-wallpaper.jpg");
     background-size: 150%;
     background-position: right -5px;
@@ -658,7 +666,7 @@ a.button1:focus {
     height: 2.5%;
     content: 'Crew Chief Resources';
     background: rgba(0, 0, 0, 0.6);
-
+    font-size: 1vw;
     position: absolute;
     transition: 500ms;
 }
@@ -696,10 +704,9 @@ a.button1:focus {
     height: 10%;
     cursor: pointer;
     font-family: 'Play', sans-serif;
-    font-size: 20px;
+    margin: 1 0%;
     color: white;
     border: none;
-
     background-image: url("https://assets.codepen.io/3305358/hazard-stripes-wallpaper.jpg");
     background-size: 150%;
     background-position: right 25px;
@@ -711,7 +718,7 @@ a.button1:focus {
     height: 2.5%;
     content: 'Tool Accountability';
     background: rgba(0, 0, 0, 0.6);
-
+    font-size: 1vw;
     position: absolute;
     transition: 500ms;
 }
@@ -748,10 +755,9 @@ a.button1:focus {
     height: 10%;
     cursor: pointer;
     font-family: 'Play', sans-serif;
-    font-size: 20px;
+    margin: 1 0%;
     color: white;
     border: none;
-
     background-image: url("https://assets.codepen.io/3305358/hazard-stripes-wallpaper.jpg");
     background-size: 150%;
     background-position: right 55px;
@@ -763,7 +769,7 @@ a.button1:focus {
     height: 2.5%;
     content: 'Feedback';
     background: rgba(0, 0, 0, 0.6);
-
+    font-size: 1vw;
     position: absolute;
     transition: 500ms;
 }
@@ -801,7 +807,7 @@ a.button1:focus {
     height: 10%;
     cursor: pointer;
     font-family: 'Play', sans-serif;
-    font-size: 20px;
+    margin: 1 0%;
     color: white;
     border: none;
 
@@ -816,7 +822,7 @@ a.button1:focus {
     height: 2.5%;
     content: 'Social';
     background: rgba(0, 0, 0, 0.6);
-
+    font-size: 1vw;
     position: absolute;
     transition: 500ms;
 }
@@ -852,14 +858,14 @@ a.button1:focus {
     height: 10%;
     cursor: pointer;
     font-family: 'Play', sans-serif;
-    font-size: 20px;
+    margin: 1 0%;
     color: white;
     border: none;
-
     background-image: url("https://assets.codepen.io/3305358/hazard-stripes-wallpaper.jpg");
     background-size: 150%;
     background-position: right 35px;
     transition: 1s;
+
 }
 
 .button6:before {
@@ -870,6 +876,7 @@ a.button1:focus {
 
     position: absolute;
     transition: 500ms;
+    font-size: 1vw;
 }
 
 .button6:hover:before {
