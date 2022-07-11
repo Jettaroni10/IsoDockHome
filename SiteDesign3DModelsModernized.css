@@ -1,0 +1,250 @@
+body {
+    background:
+        repeating-linear-gradient(190deg, rgba(42, 42, 42, 0.5) 40px,
+            rgba(0, 0, 0, 0.5) 80px, rgba(31, 31, 31, 0.5) 120px,
+            rgba(35, 35, 35, 0.5) 160px, rgba(43, 43, 43, 0.5) 200px,
+            rgba(33, 33, 33, 0.5) 240px, rgba(38, 38, 38, 0.5) 280px,
+            rgba(39, 39, 39, 0.5) 300px),
+        repeating-linear-gradient(-190deg, rgba(48, 48, 48, 0.5) 100px,
+            rgb(255, 195, 66) 60px, rgba(27, 27, 27, 0.5) 100px,
+            rgba(0, 0, 0, 0.5) 150px, rgba(24, 24, 24, 0.5) 150px,
+            rgb(227, 178, 56) 180px, rgba(0, 0, 0, 0.5) 210px,
+            rgba(0, 0, 0, 0.5) 180px),
+        repeating-linear-gradient(23deg, rgb(43, 43, 43) 50px, rgb(51, 51, 51) 100px,
+            rgb(51, 51, 51) 150px, rgb(48, 48, 48) 200px, rgb(53, 53, 53) 250px,
+            rgb(59, 59, 59) 300px, rgb(78, 78, 78) 350px, rgb(54, 54, 54) 370px);
+
+    z-index: -1;
+
+
+}
+
+#wrapper {
+    display: inline;
+}
+
+.options>div {
+    top: 100%;
+    padding-right: 2.5%;
+    padding-left: 2.5%;
+    float: left;
+
+}
+
+.SearchBar {
+    float: right;
+    width: 25%;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    overflow: hidden;
+    background-color: #333333;
+
+}
+
+.HeaderBar {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    display: block;
+    padding: 5px;
+    color: #fbfbfb;
+    background: #7a7a7a;
+    border-bottom: 2px solid #ffb938;
+    border-radius: 5px;
+    height: 5%;
+    width: 100%;
+}
+
+.Titlediv {
+
+    width: 100%;
+    border-radius: 5px;
+    margin: left;
+    font-family: 'Times New Roman', Times, serif;
+    background-image: linear-gradient(rgba(226, 164, 31, 0.5), rgb(14, 14, 14));
+    transition: 3s;
+    color: rgb(151, 151, 151);
+    font-size: larger;
+    line-height: 1.4;
+}
+
+.Subtitle {
+    font-size: 14px;
+    color: rgb(0, 115, 255);
+    letter-spacing: .05rem;
+}
+
+/* (A) SEARCH BOX */
+#the-filter {
+    box-sizing: border-box;
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 10px;
+}
+
+/* (B) LIST */
+#the-list {
+
+    list-style: none;
+    margin: 0;
+    padding: 25;
+
+}
+
+#the-list li {
+    display: flex;
+    padding: 10px;
+    background: #7a7a7a;
+    border-bottom: 2px solid #ffb938;
+    border-radius: 5px;
+    height: 35%;
+    flex-wrap: wrap;
+    transition: 0.2s;
+
+}
+
+#the-list li:hover {
+    background: #c3ac46;
+    border-radius: 20px;
+
+}
+
+#the-list li.hide {
+    display: none;
+
+}
+
+
+.ButtonModels,
+.ButtonModels:before {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ButtonModels {
+    width: 100%;
+    height: 10%;
+    cursor: pointer;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    color: rgb(186, 186, 186);
+    border: none;
+    background-image: url("https://assets.codepen.io/3305358/hazard-stripes-wallpaper.jpg");
+    background-size: 150%;
+    background-position: left;
+    transition: 1s;
+}
+
+.ButtonModels:before {
+    width: 13.45%;
+    height: 2.5%;
+
+    position: absolute;
+    transition: 500ms;
+}
+
+.ButtonModels:hover:before {
+    background: rgba(0, 0, 0, 0);
+    text-shadow: 1px 1px 1px black;
+}
+
+.ButtonModels:hover {
+    background-position: center;
+    box-shadow: 0px 0px 10px rgba(232, 218, 26, 0.5);
+}
+
+.ButtonModels:focus {
+    outline: none;
+}
+
+
+.ButtonTextBG {
+    display: block;
+    border-block-width: 55%;
+    background-color: rgba(0, 0, 0, 0.527);
+    height: fit-content;
+    border-width: 5px;
+}
+
+
+
+
+
+
+.aDiesel {
+    width: 15%;
+}
+
+.aDBG {
+    position: relative;
+    width: 100%;
+}
+
+.BottomDesign {
+    display: block;
+    background-color: rgb(174, 174, 174);
+
+}
+
+.dDiesel {
+    width: 15%;
+    color: rgb(148, 148, 148);
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 100%;
+
+    font-weight: 900;
+}
+
+.dDBG {
+    position: relative;
+    width: 100%;
+}
+
+
+.ContentHolder {
+
+    background-color: rgb(46, 46, 46);
+    width: 100%;
+    height: 90%;
+}
+
+
+
+
+
+.container {
+    overflow: hidden;
+}
+
+.filterDiv {
+    display: none;
+    /* Hidden by default */
+}
+
+/* The "show" class is added to the filtered elements */
+.show {
+    display: block;
+}
+
+/* Style the buttons */
+.btn {
+    border: none;
+    outline: none;
+    padding: 12px 16px;
+    background-color: #f1f1f1;
+    cursor: pointer;
+}
+
+/* Add a light grey background on mouse-over */
+.btn:hover {
+    background-color: #ddd;
+}
+
+/* Add a dark background to the active button */
+.btn:focus {
+    background-color: #666;
+    color: white;
+}

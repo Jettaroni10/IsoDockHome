@@ -1,0 +1,476 @@
+body {
+    background:
+        linear-gradient(217deg, rgba(142, 85, 59, 0.8), rgba(47, 21, 12, 0.8) 70.71%),
+        linear-gradient(127deg, rgba(161, 161, 161, 0.8), rgba(156, 117, 33, 0.8) 70.71%),
+        linear-gradient(336deg, rgba(212, 209, 203, 0.8), rgba(208, 208, 218, 0.8) 70.71%);
+
+    padding: 0.5%;
+
+}
+
+.Titlediv {
+
+    width: 100%;
+    border-radius: 5px;
+    margin: left;
+    font-family: 'Inder', sans-serif;
+    background: #5b5b5b;
+    border-bottom: 2px solid #f9951b;
+    transition: 3s;
+    color: #a8a8a8;
+    font-size: large;
+    line-height: 1.4;
+}
+
+.Title {
+    font-size: 110%;
+}
+
+.BackgroundTitle {
+    width: 99%;
+    height: 6%;
+    border-radius: 5px;
+    margin: left;
+    background: #313131;
+    border-bottom: 2px solid #f9951b;
+    transition: 3s;
+    color: #dbdbdb;
+    font-size: large;
+
+}
+
+.Subtitle {
+    font-size: 14px;
+    color: rgb(187, 187, 187);
+    letter-spacing: .05rem;
+}
+
+.Bottomright {
+
+    position: absolute;
+    bottom: -57%;
+    right: 20;
+
+}
+
+
+.ToolLog {
+    width: 98.5%;
+    height: 86%;
+    border-radius: 5px;
+    margin: right;
+    background: #2a2a2a;
+    border-bottom: 2px solid #f9951b;
+    transition: 3s;
+    color: #dbdbdb;
+    font-size: large;
+    position: absolute;
+
+}
+
+.ToolTitle {
+    right: 37.5%;
+    position: absolute;
+    font-size: 200%;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 400;
+    color: #ff8c00;
+}
+
+.horizontal_dotted_line {
+    border-bottom: 2px dashed #ff8c00;
+    width: 460%;
+    left: -188%;
+    position: relative;
+}
+
+
+
+
+
+
+
+
+.st_viewport::-webkit-scrollbar {
+    width: 1em;
+}
+
+.st_viewport::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+.st_viewport::-webkit-scrollbar-thumb {
+    background-color: rgba(255, 174, 0, 0.627);
+    outline: 1px solid slategrey;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+h1 {
+    font-weight: 400;
+}
+
+h2 {
+    right: 0.7%;
+    background-color: #313131;
+    position: relative;
+    line-height: 150%;
+    color: #f9951b;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    letter-spacing: 3px;
+}
+
+a {
+    color: inherit;
+}
+
+p {
+    margin-top: .7em;
+}
+
+.warning {
+    color: rgb(62, 148, 236);
+}
+
+.st_viewport {
+    max-height: 1000px;
+    overflow: auto;
+    width: 100%;
+}
+
+[data-table_id="0"] {
+    width: min-content;
+    background-color: rgb(71, 71, 56);
+}
+
+[data-table_id="1"] {
+    width: min-content;
+    background-color: rgb(61, 39, 39);
+}
+
+[data-table_id="2"] {
+    width: min-content;
+    background-color: rgb(39, 61, 41);
+    color: rgb(220, 220, 220);
+}
+
+[data-table_id="3"] {
+    width: min-content;
+    background-color: rgb(39, 58, 61);
+}
+
+[data-table_id="4"] {
+    width: min-content;
+    background-color: rgb(44, 39, 61);
+}
+
+._Children {
+    min-width: 70px;
+    border-right: #f9951b;
+    border-width: 1px;
+    width: 60px;
+    background-color: #1a1a1a39;
+    transition: 0.3s;
+}
+
+._Children:hover {
+
+    background-color: #ffd90039;
+}
+
+._BarcodeID {
+    min-width: 80px;
+    border-right: #f9951b;
+    border-width: 1px;
+    position: relative;
+    transition: 0.3s;
+}
+
+._BarcodeID:hover {
+
+    background-color: #ffd90039;
+}
+
+._ItemName {
+    min-width: 150px;
+    border-right: #f9951b;
+    border-width: 1px;
+    position: relative;
+    background-color: #1a1a1a39;
+    transition: 0.3s;
+}
+
+._ItemName:hover {
+
+    background-color: #ffd90039;
+}
+
+
+._StorageLocation {
+    min-width: 120px;
+    transition: 0.3s;
+}
+
+._StorageLocation:hover {
+
+    background-color: #ffd90039;
+}
+
+
+._Username {
+    min-width: 100px;
+    background-color: #1a1a1a39;
+    transition: 0.3s;
+}
+
+._Username:hover {
+
+    background-color: #ffd90039;
+}
+
+
+._Location {
+    min-width: 70px;
+    transition: 0.3s;
+}
+
+._Location:hover {
+
+    background-color: #ffd90039;
+}
+
+
+._DateIssued {
+    min-width: 180px;
+    background-color: #1a1a1a39;
+    transition: 0.3s;
+}
+
+._DateIssued:hover {
+
+    background-color: #ffd90039;
+}
+
+
+._Quantity {
+    min-width: 70px;
+    transition: 0.3s;
+}
+
+._Quantity:hover {
+
+    background-color: #ffd90039;
+}
+
+
+._ExpectedReturnDate {
+    min-width: 130px;
+    background-color: #1a1a1a39;
+    transition: 0.3s;
+}
+
+._ExpectedReturnDate:hover {
+
+    background-color: #ffd90039;
+}
+
+
+._ShopCode {
+    min-width: 40px;
+    transition: 0.3s;
+}
+
+._ShopCode:hover {
+
+    background-color: #ffd90039;
+}
+
+
+._Organization {
+    min-width: 100px;
+    background-color: #1a1a1a39;
+    transition: 0.3s;
+}
+
+._Organization:hover {
+
+    background-color: #ffd90039;
+}
+
+
+._Shift {
+    min-width: 80px;
+    transition: 0.3s;
+}
+
+._Shift:hover {
+
+    background-color: #ffd90039;
+}
+
+
+._ControlNumber {
+    min-width: 80px;
+    background-color: #1a1a1a39;
+    transition: 0.3s;
+}
+
+._ControlNumber:hover {
+
+    background-color: #ffd90039;
+}
+
+
+._ChitBarcodeID {
+    min-width: 60px;
+    transition: 0.3s;
+}
+
+._ChitBarcodeID:hover {
+
+    background-color: #ffd90039;
+}
+
+
+._LoggedInName {
+    min-width: 130px;
+    background-color: #1a1a1a39;
+    transition: 0.3s;
+}
+
+._LoggedInName:hover {
+
+    background-color: #ffd90039;
+}
+
+
+._LongTerm {
+    min-width: 130px;
+    transition: 0.3s;
+}
+
+._LongTerm:hover {
+
+    background-color: #ffd90039;
+}
+
+
+._Broken {
+    min-width: 80px;
+    background-color: #1a1a1a39;
+    transition: 0.3s;
+}
+
+._Broken:hover {
+
+    background-color: #ffd90039;
+}
+
+
+._Unserviceable {
+    min-width: 130px;
+    transition: 0.3s;
+}
+
+._Unserviceable:hover {
+
+    background-color: #ffd90039;
+}
+
+
+._Lost {
+    min-width: 130px;
+    background-color: #1a1a1a39;
+    transition: 0.3s;
+}
+
+._Lost:hover {
+
+    background-color: #ffd90039;
+}
+
+
+pre {
+    overflow: auto;
+}
+
+/** Sticky table styles **/
+.st_viewport {
+    position: relative;
+    background-color: rgb(63, 63, 63);
+    color: rgb(255, 174, 0);
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 500;
+    margin: 20px 0;
+}
+
+/* ###  Table wrap */
+.st_wrap_table {}
+
+/* ##   header */
+.st_table_header {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0px;
+    z-index: 1;
+    width: 100%;
+    background-color: rgb(27, 30, 36);
+    color: rgb(220, 220, 220);
+}
+
+.st_table_header h2 {
+    font-weight: 400;
+    margin: 0 20px;
+    padding: 10px 0 0;
+    width: 100%;
+}
+
+.st_table_header .st_row {
+    color: rgba(220, 220, 220, .7);
+}
+
+.st_table_header .st_column {}
+
+/* ##  table */
+.st_table {
+    position: relative;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+
+/* #   row */
+.st_row {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 0;
+}
+
+.st_table .st_row:nth-child(even) {
+    background-color: rgba(0, 0, 0, .1)
+}
+
+/* #   column */
+.st_column {
+    padding: 10px 20px;
+}
