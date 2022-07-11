@@ -1,14 +1,12 @@
 body {
-    background:
-        linear-gradient(217deg, rgba(142, 85, 59, 0.8), rgba(47, 21, 12, 0.8) 70.71%),
-        linear-gradient(127deg, rgba(161, 161, 161, 0.8), rgba(156, 117, 33, 0.8) 70.71%),
-        linear-gradient(336deg, rgba(212, 209, 203, 0.8), rgba(208, 208, 218, 0.8) 70.71%);
-
+    background: linear-gradient(217deg, rgba(142, 85, 59, 0.8), rgba(47, 21, 12, 0.8) 70.71%), linear-gradient(127deg, rgba(161, 161, 161, 0.8), rgba(156, 117, 33, 0.8) 70.71%), linear-gradient(336deg, rgba(212, 209, 203, 0.8), rgba(208, 208, 218, 0.8) 70.71%);
     padding: 0.5%;
-
 }
 
-.sidebar {
+.sidebar > * {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
     width: 13.43%;
     height: 24%;
     margin: left;
@@ -17,7 +15,6 @@ body {
     transition: 3s;
     color: #f0a953;
     border: 2px solid #f9951b;
-
 }
 
 .padding {
@@ -26,7 +23,6 @@ body {
 }
 
 .Titlediv {
-
     width: 100%;
     border-radius: 5px;
     margin: left;
@@ -40,12 +36,12 @@ body {
 }
 
 .Title {
-    font-size: 110%;
+    font-size: 2vw;
 }
 
 .BackgroundTitle {
     width: 99%;
-    height: 6%;
+    height: fit-content;
     border-radius: 5px;
     margin: left;
     background: #313131;
@@ -53,20 +49,12 @@ body {
     transition: 3s;
     color: #dbdbdb;
     font-size: large;
-
 }
 
 .Subtitle {
-    font-size: 14px;
+    font-size: 0.6vw;
     color: rgb(187, 187, 187);
     letter-spacing: .05rem;
-}
-
-.sketchfab-embed-wrapper {
-    display: block;
-    position: absolute;
-    bottom: -17;
-    right: 2;
 }
 
 .Bottomright {
@@ -77,7 +65,6 @@ body {
     width: 1893px;
     height: 900px;
     background-color: rgb(15, 15, 15);
-
 }
 
 .NewsTextMain {
@@ -89,7 +76,6 @@ body {
 }
 
 .MainMeat {
-
     border: 100px;
     border-color: rgb(37, 37, 37);
     position: absolute;
@@ -102,14 +88,11 @@ body {
     align-items: flex-end;
 }
 
-
-
 .sidebarnews {
     width: 300px;
     height: 800px;
     margin: left;
     background-color: rgb(15, 15, 15);
-
 }
 
 .ThreeDee {
@@ -132,7 +115,6 @@ body {
     width: 150px;
     transition: 0.5s;
     font-size: 20px;
-
 }
 
 .ThreeDeeModelButton {
@@ -154,7 +136,6 @@ body {
     width: 100%;
     overflow: auto;
     box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.4);
-
     background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgb(69, 69, 69) 30%, rgb(69, 69, 69) 70%, rgba(0, 0, 0, 1) 100%);
 }
 
@@ -169,10 +150,10 @@ body {
     text-decoration: none;
 }
 
-.dropdown-content a:hover {
-    color: #FFFFFF;
-    background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(255, 184, 30, 0.6) 30%, rgba(255, 185, 34, 0.6) 70%, rgba(0, 0, 0, 1) 100%);
-}
+    .dropdown-content a:hover {
+        color: #FFFFFF;
+        background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(255, 184, 30, 0.6) 30%, rgba(255, 185, 34, 0.6) 70%, rgba(0, 0, 0, 1) 100%);
+    }
 
 .ModelInfo {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -199,7 +180,6 @@ body {
     align-items: flex-end;
 }
 
-
 * {
     margin: 0;
     padding: 0;
@@ -216,22 +196,6 @@ body {
     -webkit-tap-highlight-color: transparent;
 }
 
-
-.sketchfab-embed-wrapper_bottom {
-    bottom: -1100px;
-    right: 0px;
-    position: absolute;
-}
-
-
-
-
-
-
-
-
-
-
 a.button1,
 a.button1:before {
     display: flex;
@@ -247,43 +211,34 @@ a.button1 {
     font-size: 20px;
     color: white;
     border: none;
-
     background-image: url("https://assets.codepen.io/3305358/hazard-stripes-wallpaper.jpg");
     background-size: 150%;
     background-position: right 40px;
     transition: 1s;
 }
 
-a.button1:before {
-    width: 13%;
-    height: 2.5%;
-    content: 'Home';
-    background: rgba(0, 0, 0, 0.6);
+    a.button1:before {
+        width: 13%;
+        height: 2.5%;
+        content: 'Home';
+        background: rgba(0, 0, 0, 0.6);
+        position: absolute;
+        transition: 500ms;
+    }
 
-    position: absolute;
-    transition: 500ms;
-}
+    a.button1:hover:before {
+        background: rgba(0, 0, 0, 0);
+        text-shadow: 1px 1px 1px black;
+    }
 
-a.button1:hover:before {
-    background: rgba(0, 0, 0, 0);
-    text-shadow: 1px 1px 1px black;
-}
+    a.button1:hover {
+        background-position: left -50px;
+        box-shadow: 0px 0px 10px rgba(232, 218, 26, 0.5);
+    }
 
-a.button1:hover {
-    background-position: left -50px;
-    box-shadow: 0px 0px 10px rgba(232, 218, 26, 0.5);
-}
-
-a.button1:focus {
-    outline: none;
-}
-
-
-
-
-
-
-
+    a.button1:focus {
+        outline: none;
+    }
 
 .button2,
 .button2:before {
@@ -300,43 +255,34 @@ a.button1:focus {
     font-size: 20px;
     color: white;
     border: none;
-
     background-image: url("https://assets.codepen.io/3305358/hazard-stripes-wallpaper.jpg");
     background-size: 150%;
     background-position: right -5px;
     transition: 1s;
 }
 
-.button2:before {
-    width: 13%;
-    height: 2.5%;
-    content: 'View 3D Models';
-    background: rgba(0, 0, 0, 0.6);
+    .button2:before {
+        width: 13%;
+        height: 2.5%;
+        content: 'View 3D Models';
+        background: rgba(0, 0, 0, 0.6);
+        position: absolute;
+        transition: 500ms;
+    }
 
-    position: absolute;
-    transition: 500ms;
-}
+    .button2:hover:before {
+        background: rgba(0, 0, 0, 0);
+        text-shadow: 1px 1px 1px black;
+    }
 
-.button2:hover:before {
-    background: rgba(0, 0, 0, 0);
-    text-shadow: 1px 1px 1px black;
-}
+    .button2:hover {
+        background-position: center;
+        box-shadow: 0px 0px 10px rgba(232, 218, 26, 0.5);
+    }
 
-.button2:hover {
-    background-position: center;
-    box-shadow: 0px 0px 10px rgba(232, 218, 26, 0.5);
-}
-
-.button2:focus {
-    outline: none;
-}
-
-
-
-
-
-
-
+    .button2:focus {
+        outline: none;
+    }
 
 .button3,
 .button3:before {
@@ -353,42 +299,34 @@ a.button1:focus {
     font-size: 20px;
     color: white;
     border: none;
-
     background-image: url("https://assets.codepen.io/3305358/hazard-stripes-wallpaper.jpg");
     background-size: 150%;
     background-position: right 25px;
     transition: 1s;
 }
 
-.button3:before {
-    width: 13%;
-    height: 2.5%;
-    content: 'Tech Support';
-    background: rgba(0, 0, 0, 0.6);
+    .button3:before {
+        width: 13%;
+        height: 2.5%;
+        content: 'Tech Support';
+        background: rgba(0, 0, 0, 0.6);
+        position: absolute;
+        transition: 500ms;
+    }
 
-    position: absolute;
-    transition: 500ms;
-}
+    .button3:hover:before {
+        background: rgba(0, 0, 0, 0);
+        text-shadow: 1px 1px 1px black;
+    }
 
-.button3:hover:before {
-    background: rgba(0, 0, 0, 0);
-    text-shadow: 1px 1px 1px black;
-}
+    .button3:hover {
+        background-position: center;
+        box-shadow: 0px 0px 10px rgba(232, 218, 26, 0.5);
+    }
 
-.button3:hover {
-    background-position: center;
-    box-shadow: 0px 0px 10px rgba(232, 218, 26, 0.5);
-}
-
-.button3:focus {
-    outline: none;
-}
-
-
-
-
-
-
+    .button3:focus {
+        outline: none;
+    }
 
 .button4,
 .button4:before {
@@ -405,43 +343,34 @@ a.button1:focus {
     font-size: 20px;
     color: white;
     border: none;
-
     background-image: url("https://assets.codepen.io/3305358/hazard-stripes-wallpaper.jpg");
     background-size: 150%;
     background-position: right 55px;
     transition: 1s;
 }
 
-.button4:before {
-    width: 13%;
-    height: 2.5%;
-    content: 'Feedback';
-    background: rgba(0, 0, 0, 0.6);
+    .button4:before {
+        width: 13%;
+        height: 2.5%;
+        content: 'Feedback';
+        background: rgba(0, 0, 0, 0.6);
+        position: absolute;
+        transition: 500ms;
+    }
 
-    position: absolute;
-    transition: 500ms;
-}
+    .button4:hover:before {
+        background: rgba(0, 0, 0, 0);
+        text-shadow: 1px 1px 1px black;
+    }
 
-.button4:hover:before {
-    background: rgba(0, 0, 0, 0);
-    text-shadow: 1px 1px 1px black;
-}
+    .button4:hover {
+        background-position: center;
+        box-shadow: 0px 0px 10px rgba(232, 218, 26, 0.5);
+    }
 
-.button4:hover {
-    background-position: center;
-    box-shadow: 0px 0px 10px rgba(232, 218, 26, 0.5);
-}
-
-.button4:focus {
-    outline: none;
-}
-
-
-
-
-
-
-
+    .button4:focus {
+        outline: none;
+    }
 
 .button5,
 .button5:before {
@@ -458,41 +387,34 @@ a.button1:focus {
     font-size: 20px;
     color: white;
     border: none;
-
     background-image: url("https://assets.codepen.io/3305358/hazard-stripes-wallpaper.jpg");
     background-size: 150%;
     background-position: right 5px;
     transition: 1s;
 }
 
-.button5:before {
-    width: 13%;
-    height: 2.5%;
-    content: 'Social';
-    background: rgba(0, 0, 0, 0.6);
+    .button5:before {
+        width: 13%;
+        height: 2.5%;
+        content: 'Social';
+        background: rgba(0, 0, 0, 0.6);
+        position: absolute;
+        transition: 500ms;
+    }
 
-    position: absolute;
-    transition: 500ms;
-}
+    .button5:hover:before {
+        background: rgba(0, 0, 0, 0);
+        text-shadow: 1px 1px 1px black;
+    }
 
-.button5:hover:before {
-    background: rgba(0, 0, 0, 0);
-    text-shadow: 1px 1px 1px black;
-}
+    .button5:hover {
+        background-position: center;
+        box-shadow: 0px 0px 10px rgba(232, 218, 26, 0.5);
+    }
 
-.button5:hover {
-    background-position: center;
-    box-shadow: 0px 0px 10px rgba(232, 218, 26, 0.5);
-}
-
-.button5:focus {
-    outline: none;
-}
-
-
-
-
-
+    .button5:focus {
+        outline: none;
+    }
 
 .button6,
 .button6:before {
@@ -509,33 +431,31 @@ a.button1:focus {
     font-size: 20px;
     color: white;
     border: none;
-
     background-image: url("https://assets.codepen.io/3305358/hazard-stripes-wallpaper.jpg");
     background-size: 150%;
     background-position: right 35px;
     transition: 1s;
 }
 
-.button6:before {
-    width: 13%;
-    height: 2.5%;
-    content: 'About Us';
-    background: rgba(0, 0, 0, 0.6);
+    .button6:before {
+        width: 13%;
+        height: 2.5%;
+        content: 'About Us';
+        background: rgba(0, 0, 0, 0.6);
+        position: absolute;
+        transition: 500ms;
+    }
 
-    position: absolute;
-    transition: 500ms;
-}
+    .button6:hover:before {
+        background: rgba(0, 0, 0, 0);
+        text-shadow: 1px 1px 1px black;
+    }
 
-.button6:hover:before {
-    background: rgba(0, 0, 0, 0);
-    text-shadow: 1px 1px 1px black;
-}
+    .button6:hover {
+        background-position: center;
+        box-shadow: 0px 0px 10px rgba(232, 218, 26, 0.5);
+    }
 
-.button6:hover {
-    background-position: center;
-    box-shadow: 0px 0px 10px rgba(232, 218, 26, 0.5);
-}
-
-.button6:focus {
-    outline: none;
-}
+    .button6:focus {
+        outline: none;
+    }
