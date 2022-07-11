@@ -23,12 +23,12 @@ body {
 }
 
 .Title {
-    font-size: 110%;
+    font-size: 2vw;
 }
 
 .BackgroundTitle {
     width: 99%;
-    height: 6%;
+    height: fit-content;
     border-radius: 5px;
     margin: left;
     background: #313131;
@@ -40,7 +40,7 @@ body {
 }
 
 .Subtitle {
-    font-size: 14px;
+    font-size: 0.6vw;
     color: rgb(187, 187, 187);
     letter-spacing: .05rem;
 }
@@ -500,7 +500,7 @@ h2 {
     color: #313131;
     background-clip: text;
     transition: 0.5s;
-    font-size: x-large;
+    font-size: 1.2vw;
     border-radius: 5px;
     background: #f9951b;
     border-bottom: 2px solid #313131;
