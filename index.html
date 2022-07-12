@@ -173,7 +173,9 @@
 
                     </div>
 
-                    <img class="Notification" src="Images/Home Page/Icons/Notification.png">
+                    <img class="Notification" src="Images/Home Page/Icons/Notification.png" id="imgClickAndChange"
+                        onclick="changeImage()">
+
                 </div>
                 </img>
 
@@ -446,6 +448,14 @@
         alert("The pressure team listed on the site is OUT OF DATE!");
     } else {
 
+    }
+
+    function changeImage() {
+        if (document.getElementById("imgClickAndChange").src == "Images/Home Page/Icons/Notification.png") {
+            document.getElementById("imgClickAndChange").src = "Images/Home Page/News/Willden.jpg";
+        } else {
+            document.getElementById("imgClickAndChange").src = "Images/Home Page/Icons/Bell.png";
+        }
     }
 
 </script>
