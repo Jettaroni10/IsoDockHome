@@ -189,7 +189,7 @@
                                     2022/07/12
                                 </div>
                             </div>
-                            <div class="Positions">
+                            <div class="PositionsHydro">
 
                                 <h2>
                                     Hydraulic Pressure Team:
@@ -225,24 +225,35 @@
                 <div class="ImageVestBleed" tabindex="1">
                     <div class="NotificationInfoBleed">
                         <center>
-                            <h2>
-                                Bleed Air Team:
-                            </h2>
-                            <h3>
-                                <div class="position">Supervisor:</div> SSgt Haight / SSgt Lewsader
-                                <hr>
-                                <div class="position">Backbone:</div> SSgt Walker / Msgt Wills
-                                <hr>
-                                <div class="position">Gears:</div> Amn Shaffer / Amn Willden
-                                <hr>
-                                <div class="position">Tail:</div> Amn Binion / Amn Browning
-                                <hr>
-                                <div class="position">Troop/Cargo:</div> Amn West / Amn Tinker
-                                <hr>
-                                <div class="position">Left Wing LE:</div> Amn Dickey / Amn People
-                                <hr>
-                                <div class="position">Right Wing LE:</div> Amn Pawley / Amn Johnson
-                            </h3>
+                            <div class="DateandTimeBleed">
+                                UPDATED:
+                                <br>
+                                <div class="DateBleed">
+                                    2022/07/11
+                                </div>
+                            </div>
+
+                            <div class="PositionsBleed">
+
+                                <h2>
+                                    Bleed Air Team:
+                                </h2>
+                                <h3>
+                                    <div class="position">Supervisor:</div> SSgt Haight / SSgt Lewsader
+                                    <hr>
+                                    <div class="position">Backbone:</div> SSgt Walker / Msgt Wills
+                                    <hr>
+                                    <div class="position">Gears:</div> Amn Shaffer / Amn Willden
+                                    <hr>
+                                    <div class="position">Tail:</div> Amn Binion / Amn Browning
+                                    <hr>
+                                    <div class="position">Troop/Cargo:</div> Amn West / Amn Tinker
+                                    <hr>
+                                    <div class="position">Left Wing LE:</div> Amn Dickey / Amn People
+                                    <hr>
+                                    <div class="position">Right Wing LE:</div> Amn Pawley / Amn Johnson
+                                </h3>
+                            </div>
                         </center>
                     </div>
                     <img class="Vestbleed" src="Images/Home Page/Icons/vestbleed.png">
@@ -429,9 +440,11 @@
 
 <script>
 
-    const elementcolor = document.querySelector('.DateHydro');
+    const Hydroelementcolor = document.querySelector('.DateHydro');
+    var HydrodateStart = document.querySelector('.DateHydro').innerText;
 
-    var dateStart = document.querySelector('.DateHydro').innerText;
+    const Bleedelementcolor = document.querySelector('.DateBleed');
+    var BleeddateStart = document.querySelector('.DateBleed').innerText;
 
 
 
@@ -443,9 +456,17 @@
     today = mm + '/' + dd + '/' + yyyy;
 
 
-    if (Date.parse(dateStart) < Date.parse(today)) {
-        elementcolor.style.color = 'red';
+    if (Date.parse(HydrodateStart) < Date.parse(today)) {
+        Hydroelementcolor.style.color = 'red';
         alert("The pressure team listed on the site is OUT OF DATE!");
+    } else {
+
+    }
+
+
+    if (Date.parse(BleeddateStart) < Date.parse(today)) {
+        Bleedelementcolor.style.color = 'red';
+        alert("The bleed-air team listed on the site is OUT OF DATE!");
     } else {
 
     }

@@ -356,7 +356,7 @@ body {
     opacity: 100%;
 }
 
-.ImageVest:focus .Positions {
+.ImageVest:focus .PositionsHydro {
     opacity: 100%;
 }
 
@@ -368,7 +368,6 @@ body {
     border-radius: 5px;
     background: rgba(22, 22, 22, 0.774);
     transition: 0.5s;
-
     border: 2px solid #ffffff;
     padding: 20%;
     font-family: Arial, Helvetica, sans-serif;
@@ -395,7 +394,20 @@ body {
     font-family: 'Courier New', Courier, monospace;
 }
 
-.Positions {
+.DateandTimeBleed {
+    font-size: 0.8vw;
+    letter-spacing: 100%;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.DateBleed {
+    font-size: 0.8vw;
+    color: #90ff2f;
+    letter-spacing: 100%;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.PositionsHydro {
     opacity: 0%;
     width: 100%;
     height: fit-content;
@@ -413,10 +425,27 @@ body {
     top: 0%;
     line-height: 200%;
     pointer-events: none;
-
 }
 
-
+.PositionsBleed {
+    opacity: 0%;
+    width: 100%;
+    height: fit-content;
+    margin: left;
+    border-radius: 5px;
+    background: rgba(84, 84, 84, 0.723);
+    transition: 0.5s;
+    color: #ffffff;
+    border: 2px solid #ffffff;
+    padding: 2%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: medium;
+    font-weight: 900;
+    right: 110%;
+    top: 0%;
+    line-height: 200%;
+    pointer-events: none;
+}
 
 
 
@@ -442,15 +471,18 @@ body {
     opacity: 100%;
 }
 
+.ImageVestBleed:focus .PositionsBleed {
+    opacity: 100%;
+}
+
 .NotificationInfoBleed {
     opacity: 0%;
     width: 700%;
     height: fit-content;
     margin: left;
     border-radius: 5px;
-    background: rgba(84, 84, 84, 0.723);
+    background: rgba(22, 22, 22, 0.774);
     transition: 0.5s;
-    color: #ffffff;
     border: 2px solid #ffffff;
     padding: 20%;
     font-family: Arial, Helvetica, sans-serif;
