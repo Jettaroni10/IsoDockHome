@@ -296,9 +296,10 @@ body {
 
 .Emojis {
     opacity: 0%;
-    width: 275%;
+    width: 290%;
+    top: 10%;
     left: 25%;
-    position: relative;
+    position: absolute;
     z-index: 10;
 }
 
