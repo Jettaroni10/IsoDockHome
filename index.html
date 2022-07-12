@@ -9,6 +9,7 @@
 
     <link rel="stylesheet" href="SiteDesign.css">
     <script type="text/javascript" src="SiteSlideshow.js"></script>
+    <script type="text/javascript" src="DateSystem.js"></script>
 
 </HEAD>
 
@@ -95,6 +96,8 @@
                         </center>
                     </div>
 
+
+
                     <div class="NotificationWindow">
 
                         <br>
@@ -177,28 +180,38 @@
                 <div class="ImageVest" tabindex="1">
                     <div class="NotificationInfoHydraulic">
                         <center>
-                            <h2>
-                                Hydraulic Pressure Team:
-                            </h2>
-                            <h3>
-                                <div class="position">Supervisor:</div> SSgt Haight / SSgt Lewsader
-                                <hr>
-                                <div class="position">Backbone:</div> SSgt Walker / Msgt Wills
-                                <hr>
-                                <div class="position">Gears:</div> Amn Shaffer / Amn Willden
-                                <hr>
-                                <div class="position">Tail:</div> Amn Binion / Amn Browning
-                                <hr>
-                                <div class="position">Troop/Cargo:</div> Amn West / Amn Tinker
-                                <hr>
-                                <div class="position">Left Wing LE:</div> Amn Dickey / Amn People
-                                <hr>
-                                <div class="position">Left Wing TE:</div> Amn Delepine / Amn Garner
-                                <hr>
-                                <div class="position">Right Wing LE:</div> Amn Pawley / Amn Johnson
-                                <hr>
-                                <div class="position">Right Wing TE:</div> Amn Rutledge / Amn Vasquez
-                            </h3>
+                            <div class="DateandTimeHydro">
+                                UPDATED:
+                                <br>
+                                <div class="DateHydro">
+                                    2022/07/11
+                                </div>
+                            </div>
+                            <div class="Positions">
+
+                                <h2>
+                                    Hydraulic Pressure Team:
+                                </h2>
+                                <h3>
+                                    <div class="position">Supervisor:</div> SSgt Haight / SSgt Lewsader
+                                    <hr>
+                                    <div class="position">Backbone:</div> SSgt Walker / Msgt Wills
+                                    <hr>
+                                    <div class="position">Gears:</div> Amn Shaffer / Amn Willden
+                                    <hr>
+                                    <div class="position">Tail:</div> Amn Binion / Amn Browning
+                                    <hr>
+                                    <div class="position">Troop/Cargo:</div> Amn West / Amn Tinker
+                                    <hr>
+                                    <div class="position">Left Wing LE:</div> Amn Dickey / Amn People
+                                    <hr>
+                                    <div class="position">Left Wing TE:</div> Amn Delepine / Amn Garner
+                                    <hr>
+                                    <div class="position">Right Wing LE:</div> Amn Pawley / Amn Johnson
+                                    <hr>
+                                    <div class="position">Right Wing TE:</div> Amn Rutledge / Amn Vasquez
+                                </h3>
+                            </div>
                         </center>
                     </div>
                     <img class="Vest" src="Images/Home Page/Icons/vest.png">
@@ -411,5 +424,31 @@
         <br>
     </div>
 </BODY>
+
+<script>
+
+    const elementcolor = document.querySelector('.DateHydro');
+
+    var dateStart = document.querySelector('.DateHydro').innerText;
+
+
+
+    var today = new Date();
+    var dd = String(today.getDate()).padStart(2, '0');
+    var mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
+    var yyyy = today.getFullYear();
+
+    today = mm + '/' + dd + '/' + yyyy;
+
+
+    if (Date.parse(dateStart) < Date.parse(today)) {
+        elementcolor.style.color = 'red';
+        alert("The pressure team listed on the site is OUT OF DATE!");
+    } else {
+
+    }
+
+</script>
+
 
 </HTML>
