@@ -259,11 +259,9 @@ body {
 }
 
 .NotificationWindow {
-    display: flex;
     opacity: 0%;
     width: 800%;
-    height: 450%;
-    margin: left;
+    height: fit-content;
     background: rgb(53, 53, 53);
     color: #ffffff;
     border: 2px solid #ffffff;
@@ -275,9 +273,11 @@ body {
     right: 100%;
     top: 0;
     pointer-events: none;
+    justify-content: space-around;
 }
 
 .TextWindow {
+    position: relative;
     padding: 5%;
     display: block;
     background-color: #5b5b5b;
@@ -285,22 +285,20 @@ body {
     border-color: #a8a8a8;
     border-radius: 5px;
     height: fit-content;
-
+    font-size: 0.75vw;
 }
 
 .React {
-    left: 3%;
-    Top: 15.5%;
     width: 25%;
-    position: absolute;
+    position: relative;
     cursor: pointer;
 }
 
 .Emojis {
     opacity: 0%;
-    width: fit-content;
+    width: 275%;
     left: 25%;
-    position: absolute;
+    position: relative;
     z-index: 10;
 }
 
@@ -323,16 +321,16 @@ body {
     border-color: #a8a8a8;
     border-radius: 100%;
     position: absolute;
-    left: 1%;
+    left: 0%;
     top: 0.5%;
 }
 
 .DateandTime {
-    position: absolute;
-    left: 25%;
-    top: 20%;
+    position: relative;
     width: fit-content;
     color: #adadad74;
+    top: auto;
+    margin: auto;
 }
 
 .Vest {
