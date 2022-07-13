@@ -90,7 +90,6 @@ a {
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
 }
 
-/*Light blue cover above the slide show*/
 .card::after {
     content: '';
     position: absolute;
@@ -113,6 +112,7 @@ a {
     background-image: url('Images/Home Page/Slideshow/Iso1.jpg');
     background-size: cover;
     animation: opaqTransition 40s cubic-bezier(.1, 0, .1, 1) infinite;
+
 }
 
 .card_part.card_part-two {
