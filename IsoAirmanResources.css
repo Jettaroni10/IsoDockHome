@@ -69,12 +69,12 @@ ul {
 }
 
 .Title {
-    font-size: 110%;
+    font-size: 2vw;
 }
 
 .BackgroundTitle {
     width: 99%;
-    height: 6%;
+    height: fit-content;
     border-radius: 5px;
     margin: left;
     background: #313131;

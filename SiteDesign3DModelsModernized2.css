@@ -3,7 +3,7 @@ body {
     z-index: -1;
 }
 
-.options > div {
+.options>div {
     float: left;
     text-align: center;
     padding: 2.5%;
@@ -63,6 +63,7 @@ ul {
 
 .Title {
     font-size: 2vw;
+
 }
 
 .BackgroundTitle {
@@ -75,6 +76,7 @@ ul {
     transition: 3s;
     color: #dbdbdb;
     font-size: large;
+    position: relative;
 }
 
 .Subtitle {
@@ -102,25 +104,25 @@ ul {
     transition: 0.2s;
 }
 
-    #the-list li {
-        border: #f9951b;
-        padding: 10px;
-        background: #4d4d4d;
-        border-bottom: 5px solid #f9951b;
-        border-radius: 5px;
-        transition: 0.2s;
-    }
+#the-list li {
+    border: #f9951b;
+    padding: 10px;
+    background: #4d4d4d;
+    border-bottom: 5px solid #f9951b;
+    border-radius: 5px;
+    transition: 0.2s;
+}
 
-        #the-list li:hover {
-            background: #c3ac46;
-            border-radius: 20px;
-            transition: 0.2s;
-        }
+#the-list li:hover {
+    background: #c3ac46;
+    border-radius: 20px;
+    transition: 0.2s;
+}
 
-        #the-list li.hide {
-            display: none;
-            transition: 0.2s;
-        }
+#the-list li.hide {
+    display: none;
+    transition: 0.2s;
+}
 
 .ButtonModels,
 .ButtonModels:before {
@@ -143,26 +145,26 @@ ul {
     transition: 1s;
 }
 
-    .ButtonModels:before {
-        width: 13.45%;
-        height: 2.5%;
-        position: absolute;
-        transition: 500ms;
-    }
+.ButtonModels:before {
+    width: 13.45%;
+    height: 2.5%;
+    position: absolute;
+    transition: 500ms;
+}
 
-    .ButtonModels:hover:before {
-        background: rgba(0, 0, 0, 0);
-        text-shadow: 1px 1px 1px black;
-    }
+.ButtonModels:hover:before {
+    background: rgba(0, 0, 0, 0);
+    text-shadow: 1px 1px 1px black;
+}
 
-    .ButtonModels:hover {
-        background-position: center;
-        box-shadow: 0px 0px 10px rgba(232, 218, 26, 0.5);
-    }
+.ButtonModels:hover {
+    background-position: center;
+    box-shadow: 0px 0px 10px rgba(232, 218, 26, 0.5);
+}
 
-    .ButtonModels:focus {
-        outline: none;
-    }
+.ButtonModels:focus {
+    outline: none;
+}
 
 .ButtonTextBG {
     display: flex;
@@ -258,13 +260,28 @@ ul {
     font-weight: 600;
 }
 
-    /* Add a light grey background on mouse-over */
-    .btn:hover {
-        background-color: rgb(71, 71, 71);
-    }
+.HomeButtonTop {
+    border: none;
+    border-radius: 0.3vw;
+    outline: none;
+    padding: 12px 16px;
+    left: 0.5%;
+    top: 12%;
+    width: 10%;
+    background-color: #5a5a5a;
+    cursor: pointer;
+    color: #dadada;
+    font-weight: 600;
+    position: absolute;
+}
 
-    /* Add a dark background to the active button */
-    .btn:focus {
-        background-color: #666;
-        color: white;
-    }
+/* Add a light grey background on mouse-over */
+.btn:hover {
+    background-color: rgb(71, 71, 71);
+}
+
+/* Add a dark background to the active button */
+.btn:focus {
+    background-color: #666;
+    color: white;
+}
