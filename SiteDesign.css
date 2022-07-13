@@ -224,7 +224,7 @@ body {
     opacity: 0%;
     width: 800%;
     height: fit-content;
-    background: rgba(53, 53, 53, 0.599);
+    background: rgb(53, 53, 53);
     color: #ffffff;
     border: 2px solid #ffffff;
     padding: 20%;
