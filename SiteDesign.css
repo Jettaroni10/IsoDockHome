@@ -1,15 +1,9 @@
 body {
-    background:
-        linear-gradient(217deg, rgba(142, 85, 59, 0.8), rgba(47, 21, 12, 0.8) 70.71%),
-        linear-gradient(127deg, rgba(161, 161, 161, 0.8), rgba(156, 117, 33, 0.8) 70.71%),
-        linear-gradient(336deg, rgba(212, 209, 203, 0.8), rgba(208, 208, 218, 0.8) 70.71%);
-
+    background: linear-gradient(217deg, rgba(142, 85, 59, 0.8), rgba(47, 21, 12, 0.8) 70.71%), linear-gradient(127deg, rgba(161, 161, 161, 0.8), rgba(156, 117, 33, 0.8) 70.71%), linear-gradient(336deg, rgba(212, 209, 203, 0.8), rgba(208, 208, 218, 0.8) 70.71%);
     padding: 0.5%;
-
 }
 
 .Titlediv {
-
     width: 100%;
     border-radius: 5px;
     margin: left;
@@ -36,7 +30,6 @@ body {
     transition: 3s;
     color: #dbdbdb;
     font-size: large;
-
 }
 
 .Subtitle {
@@ -46,11 +39,9 @@ body {
 }
 
 .Bottomright {
-
     position: absolute;
     bottom: -57%;
     right: 20;
-
 }
 
 .NewsTextMain {
@@ -69,17 +60,11 @@ body {
     height: 88.4%;
 }
 
-
-
-
-
-
 *,
 *::before,
 *::after {
     box-sizing: border-box;
 }
-
 
 .card {
     position: absolute;
@@ -92,22 +77,19 @@ body {
     border-radius: 5px;
     border-color: #f09819;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
-
 }
 
-/*Light blue cover above the slide show*/
-.card::after {
-    content: '';
-    position: absolute;
-    left: 0;
-    top: 0;
-
-    display: block;
-    width: 100%;
-    height: 100%;
-
-    background-color: rgba(0, 0, 0, 0.462);
-}
+    /*Light blue cover above the slide show*/
+    .card::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        display: block;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.462);
+    }
 
 .card_part {
     z-index: 4;
@@ -121,37 +103,35 @@ body {
     animation: opaqTransition 40s cubic-bezier(.1, 0, .1, 1) infinite;
 }
 
+    .card_part.card_part-two {
+        z-index: 3;
+        background-image: url('Images/Home Page/Slideshow/Iso2.png');
+        animation-delay: 10s;
+        width: 100%;
+        height: 100%;
+        min-height: 100%;
+        max-height: 100%;
+    }
 
-.card_part.card_part-two {
-    z-index: 3;
-    background-image: url('Images/Home Page/Slideshow/Iso2.png');
-    animation-delay: 10s;
-    width: 100%;
-    height: 100%;
-    min-height: 100%;
-    max-height: 100%;
-}
+    .card_part.card_part-three {
+        z-index: 2;
+        background-image: url('Images/Home Page/Slideshow/Iso3.png');
+        animation-delay: 20s;
+        width: 100%;
+        height: 100%;
+        min-height: 100%;
+        max-height: 100%;
+    }
 
-.card_part.card_part-three {
-    z-index: 2;
-    background-image: url('Images/Home Page/Slideshow/Iso3.png');
-    animation-delay: 20s;
-    width: 100%;
-    height: 100%;
-    min-height: 100%;
-    max-height: 100%;
-}
-
-.card_part.card_part-four {
-    z-index: 1;
-    background-image: url('Images/Home Page/Slideshow/Iso4.png');
-    animation-delay: 30s;
-    width: 100%;
-    height: 100%;
-    min-height: 100%;
-    max-height: 100%;
-}
-
+    .card_part.card_part-four {
+        z-index: 1;
+        background-image: url('Images/Home Page/Slideshow/Iso4.png');
+        animation-delay: 30s;
+        width: 100%;
+        height: 100%;
+        min-height: 100%;
+        max-height: 100%;
+    }
 
 @keyframes opaqTransition {
     3% {
@@ -170,13 +150,6 @@ body {
         transform: translateX(-100%);
     }
 }
-
-
-
-
-
-
-
 
 .SideBarImage {
     z-index: 5;
@@ -206,25 +179,18 @@ body {
     z-index: 10;
 }
 
-
-.Notification:hover {
-    background-color: #939393;
-    cursor: pointer;
-}
-
-.ImageBell:hover .NotificationInfo {
-    opacity: 100%;
-}
+    .Notification:hover {
+        background-color: #939393;
+        cursor: pointer;
+    }
 
 .ImageBell:focus .NotificationInfo {
     opacity: 0%;
-
 }
 
 .ImageBell:focus .NotificationWindow {
     opacity: 100%;
     pointer-events: all;
-
 }
 
 .hiddendiv {
@@ -239,7 +205,7 @@ body {
 }
 
 .NotificationInfo {
-    opacity: 0%;
+    opacity: 100%;
     width: 600%;
     height: fit-content;
     margin: left;
@@ -314,7 +280,6 @@ body {
     height: fit-content;
 }
 
-
 .ProfilePic {
     display: block;
     background-color: #757575;
@@ -347,10 +312,9 @@ body {
     z-index: 10;
 }
 
-
-.Vest:hover {
-    background-color: #939393;
-}
+    .Vest:hover {
+        background-color: #939393;
+    }
 
 .ImageVest:focus .NotificationInfoHydraulic {
     opacity: 100%;
@@ -378,7 +342,6 @@ body {
     line-height: 200%;
     position: absolute;
     pointer-events: none;
-
 }
 
 .DateandTimeHydro {
@@ -447,8 +410,6 @@ body {
     pointer-events: none;
 }
 
-
-
 .VestBleed {
     display: block;
     background-color: #757575;
@@ -462,10 +423,9 @@ body {
     z-index: 10;
 }
 
-
-.VestBleed:hover {
-    background-color: #939393;
-}
+    .VestBleed:hover {
+        background-color: #939393;
+    }
 
 .ImageVestBleed:focus .NotificationInfoBleed {
     opacity: 100%;
@@ -493,13 +453,7 @@ body {
     line-height: 200%;
     position: absolute;
     pointer-events: none;
-
-
 }
-
-
-
-
 
 .position {
     color: #F09819;
@@ -509,15 +463,12 @@ h2 {
     color: #90ff2f;
 }
 
-
-
-
-#Notification:hover+#NotificationInfo {
+#Notification:hover + #NotificationInfo {
     transition: 2s;
     background: green;
 }
 
-.sidebar>* {
+.sidebar > * {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
@@ -545,23 +496,22 @@ h2 {
     overflow-y: auto;
 }
 
-.sidebarnews:hover {
-    -webkit-mask-position: left top;
-}
+    .sidebarnews:hover {
+        -webkit-mask-position: left top;
+    }
 
-.sidebarnews::-webkit-scrollbar {
-    width: 0.5em;
-}
+    .sidebarnews::-webkit-scrollbar {
+        width: 0.5em;
+    }
 
-.sidebarnews::-webkit-scrollbar-track {
-    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
-}
+    .sidebarnews::-webkit-scrollbar-track {
+        box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    }
 
-.sidebarnews::-webkit-scrollbar-thumb {
-    background-color: rgba(255, 174, 0, 0.627);
-    outline: 1px solid slategrey;
-}
-
+    .sidebarnews::-webkit-scrollbar-thumb {
+        background-color: rgba(255, 174, 0, 0.627);
+        outline: 1px solid slategrey;
+    }
 
 .NEWS {
     width: 100%;
@@ -609,7 +559,6 @@ h2 {
     -webkit-tap-highlight-color: transparent;
 }
 
-
 .HeaderButton1 {
     margin: 10px;
     padding: 15px 30px;
@@ -641,22 +590,6 @@ h2 {
     transform: scale(0.95);
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 a.button1,
 a.button1:before {
     display: flex;
@@ -678,36 +611,29 @@ a.button1 {
     transition: 1s;
 }
 
-a.button1:before {
-    width: 13%;
-    height: 2.5%;
-    content: 'View 3D Models';
-    background: rgba(0, 0, 0, 0.6);
-    font-size: 1vw;
-    position: absolute;
-    transition: 500ms;
-}
+    a.button1:before {
+        width: 13%;
+        height: 2.5%;
+        content: 'View 3D Models';
+        background: rgba(0, 0, 0, 0.6);
+        font-size: 1vw;
+        position: absolute;
+        transition: 500ms;
+    }
 
-a.button1:hover:before {
-    background: rgba(0, 0, 0, 0);
-    text-shadow: 1px 1px 1px black;
-}
+    a.button1:hover:before {
+        background: rgba(0, 0, 0, 0);
+        text-shadow: 1px 1px 1px black;
+    }
 
-a.button1:hover {
-    background-position: left -50px;
-    box-shadow: 0px 0px 10px rgba(232, 218, 26, 0.5);
-}
+    a.button1:hover {
+        background-position: left -50px;
+        box-shadow: 0px 0px 10px rgba(232, 218, 26, 0.5);
+    }
 
-a.button1:focus {
-    outline: none;
-}
-
-
-
-
-
-
-
+    a.button1:focus {
+        outline: none;
+    }
 
 .button2,
 .button2:before {
@@ -730,36 +656,29 @@ a.button1:focus {
     transition: 1s;
 }
 
-.button2:before {
-    width: 13%;
-    height: 2.5%;
-    content: 'Crew Chief Resources';
-    background: rgba(0, 0, 0, 0.6);
-    font-size: 1vw;
-    position: absolute;
-    transition: 500ms;
-}
+    .button2:before {
+        width: 13%;
+        height: 2.5%;
+        content: 'Crew Chief Resources';
+        background: rgba(0, 0, 0, 0.6);
+        font-size: 1vw;
+        position: absolute;
+        transition: 500ms;
+    }
 
-.button2:hover:before {
-    background: rgba(0, 0, 0, 0);
-    text-shadow: 1px 1px 1px black;
-}
+    .button2:hover:before {
+        background: rgba(0, 0, 0, 0);
+        text-shadow: 1px 1px 1px black;
+    }
 
-.button2:hover {
-    background-position: center;
-    box-shadow: 0px 0px 10px rgba(232, 218, 26, 0.5);
-}
+    .button2:hover {
+        background-position: center;
+        box-shadow: 0px 0px 10px rgba(232, 218, 26, 0.5);
+    }
 
-.button2:focus {
-    outline: none;
-}
-
-
-
-
-
-
-
+    .button2:focus {
+        outline: none;
+    }
 
 .button3,
 .button3:before {
@@ -782,35 +701,29 @@ a.button1:focus {
     transition: 1s;
 }
 
-.button3:before {
-    width: 13%;
-    height: 2.5%;
-    content: 'Tool Accountability';
-    background: rgba(0, 0, 0, 0.6);
-    font-size: 1vw;
-    position: absolute;
-    transition: 500ms;
-}
+    .button3:before {
+        width: 13%;
+        height: 2.5%;
+        content: 'Tool Accountability';
+        background: rgba(0, 0, 0, 0.6);
+        font-size: 1vw;
+        position: absolute;
+        transition: 500ms;
+    }
 
-.button3:hover:before {
-    background: rgba(0, 0, 0, 0);
-    text-shadow: 1px 1px 1px black;
-}
+    .button3:hover:before {
+        background: rgba(0, 0, 0, 0);
+        text-shadow: 1px 1px 1px black;
+    }
 
-.button3:hover {
-    background-position: center;
-    box-shadow: 0px 0px 10px rgba(232, 218, 26, 0.5);
-}
+    .button3:hover {
+        background-position: center;
+        box-shadow: 0px 0px 10px rgba(232, 218, 26, 0.5);
+    }
 
-.button3:focus {
-    outline: none;
-}
-
-
-
-
-
-
+    .button3:focus {
+        outline: none;
+    }
 
 .button4,
 .button4:before {
@@ -833,36 +746,29 @@ a.button1:focus {
     transition: 1s;
 }
 
-.button4:before {
-    width: 13%;
-    height: 2.5%;
-    content: 'Feedback';
-    background: rgba(0, 0, 0, 0.6);
-    font-size: 1vw;
-    position: absolute;
-    transition: 500ms;
-}
+    .button4:before {
+        width: 13%;
+        height: 2.5%;
+        content: 'Feedback';
+        background: rgba(0, 0, 0, 0.6);
+        font-size: 1vw;
+        position: absolute;
+        transition: 500ms;
+    }
 
-.button4:hover:before {
-    background: rgba(0, 0, 0, 0);
-    text-shadow: 1px 1px 1px black;
-}
+    .button4:hover:before {
+        background: rgba(0, 0, 0, 0);
+        text-shadow: 1px 1px 1px black;
+    }
 
-.button4:hover {
-    background-position: center;
-    box-shadow: 0px 0px 10px rgba(232, 218, 26, 0.5);
-}
+    .button4:hover {
+        background-position: center;
+        box-shadow: 0px 0px 10px rgba(232, 218, 26, 0.5);
+    }
 
-.button4:focus {
-    outline: none;
-}
-
-
-
-
-
-
-
+    .button4:focus {
+        outline: none;
+    }
 
 .button5,
 .button5:before {
@@ -879,41 +785,35 @@ a.button1:focus {
     margin: 1 0%;
     color: white;
     border: none;
-
     background-image: url("https://assets.codepen.io/3305358/hazard-stripes-wallpaper.jpg");
     background-size: 150%;
     background-position: right 5px;
     transition: 1s;
 }
 
-.button5:before {
-    width: 13%;
-    height: 2.5%;
-    content: 'Social';
-    background: rgba(0, 0, 0, 0.6);
-    font-size: 1vw;
-    position: absolute;
-    transition: 500ms;
-}
+    .button5:before {
+        width: 13%;
+        height: 2.5%;
+        content: 'Social';
+        background: rgba(0, 0, 0, 0.6);
+        font-size: 1vw;
+        position: absolute;
+        transition: 500ms;
+    }
 
-.button5:hover:before {
-    background: rgba(0, 0, 0, 0);
-    text-shadow: 1px 1px 1px black;
-}
+    .button5:hover:before {
+        background: rgba(0, 0, 0, 0);
+        text-shadow: 1px 1px 1px black;
+    }
 
-.button5:hover {
-    background-position: center;
-    box-shadow: 0px 0px 10px rgba(232, 218, 26, 0.5);
-}
+    .button5:hover {
+        background-position: center;
+        box-shadow: 0px 0px 10px rgba(232, 218, 26, 0.5);
+    }
 
-.button5:focus {
-    outline: none;
-}
-
-
-
-
-
+    .button5:focus {
+        outline: none;
+    }
 
 .button6,
 .button6:before {
@@ -934,30 +834,28 @@ a.button1:focus {
     background-size: 150%;
     background-position: right 35px;
     transition: 1s;
-
 }
 
-.button6:before {
-    width: 13%;
-    height: 2.5%;
-    content: 'About Us';
-    background: rgba(0, 0, 0, 0.6);
+    .button6:before {
+        width: 13%;
+        height: 2.5%;
+        content: 'About Us';
+        background: rgba(0, 0, 0, 0.6);
+        position: absolute;
+        transition: 500ms;
+        font-size: 1vw;
+    }
 
-    position: absolute;
-    transition: 500ms;
-    font-size: 1vw;
-}
+    .button6:hover:before {
+        background: rgba(0, 0, 0, 0);
+        text-shadow: 1px 1px 1px black;
+    }
 
-.button6:hover:before {
-    background: rgba(0, 0, 0, 0);
-    text-shadow: 1px 1px 1px black;
-}
+    .button6:hover {
+        background-position: center;
+        box-shadow: 0px 0px 10px rgba(232, 218, 26, 0.5);
+    }
 
-.button6:hover {
-    background-position: center;
-    box-shadow: 0px 0px 10px rgba(232, 218, 26, 0.5);
-}
-
-.button6:focus {
-    outline: none;
-}
+    .button6:focus {
+        outline: none;
+    }

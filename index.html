@@ -448,10 +448,20 @@
 
     function changeImage() {
         if (document.getElementById("imgClickAndChange").src == "Images/Home Page/Icons/Notification.png") {
-            document.getElementById("imgClickAndChange").src = "Images/Home Page/News/Willden.jpg";
+            document.getElementById("imgClickAndChange").src = "Images/Home Page/News/Notification.png";
         } else {
             document.getElementById("imgClickAndChange").src = "Images/Home Page/Icons/Bell.png";
         }
     }
+
+    function notificationInfoClick() {
+        if (document.getElementById("ImageBell").src == "Images/Home Page/Icons/Notification.png") {
+            document.getElementById("ImageBell").src = "Images/Home Page/News/Notification.png";
+        } else {
+            document.getElementById("imgClickAndChange").src = "Images/Home Page/Icons/Bell.png";
+        }
+    }
+
+    //WORK ON NOTIFICATION INFO WINDOW HIDING PERMANENTLY
 </script>
 </HTML>
