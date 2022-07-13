@@ -8,8 +8,12 @@ body {
 
 }
 
-.Titlediv {
+a {
+    color: #a8a8a8;
+    text-decoration: none;
+}
 
+.Titlediv {
     width: 100%;
     border-radius: 5px;
     margin: left;
@@ -19,16 +23,30 @@ body {
     transition: 3s;
     color: #a8a8a8;
     font-size: large;
-    line-height: 1.4;
 }
 
 .Title {
-    font-size: 110%;
+    font-size: 2vw;
+}
+
+.HomeButtonTop {
+    border: none;
+    border-radius: 0.3vw;
+    outline: none;
+    padding: 12px 16px;
+    left: 0.5%;
+    top: 12%;
+    width: 10%;
+    background-color: #5a5a5a;
+    cursor: pointer;
+    color: #dadada;
+    font-weight: 600;
+    position: absolute;
 }
 
 .BackgroundTitle {
     width: 99%;
-    height: 6%;
+    height: fit-content;
     border-radius: 5px;
     margin: left;
     background: #313131;
@@ -36,11 +54,15 @@ body {
     transition: 3s;
     color: #dbdbdb;
     font-size: large;
-
+    position: relative;
 }
 
 .Subtitle {
-    font-size: 14px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 0 30%;
+    font-size: 0.6vw;
     color: rgb(187, 187, 187);
     letter-spacing: .05rem;
 }
@@ -56,12 +78,11 @@ body {
 
 .ToolLog {
     width: 98.5%;
-    height: 86%;
+    height: 73vh;
     border-radius: 5px;
     margin: right;
     background: #2a2a2a;
     border-bottom: 2px solid #f9951b;
-    transition: 3s;
     color: #dbdbdb;
     font-size: large;
     position: absolute;
@@ -75,13 +96,6 @@ body {
     font-family: 'Courier New', Courier, monospace;
     font-weight: 400;
     color: #ff8c00;
-}
-
-.horizontal_dotted_line {
-    border-bottom: 2px dashed #ff8c00;
-    width: 460%;
-    left: -188%;
-    position: relative;
 }
 
 
@@ -145,7 +159,6 @@ p {
 }
 
 .st_viewport {
-    max-height: 1000px;
     overflow: auto;
     width: 100%;
 }
@@ -414,6 +427,7 @@ pre {
     font-family: 'Courier New', Courier, monospace;
     font-weight: 500;
     margin: 20px 0;
+    height: 65vh;
 }
 
 /* ###  Table wrap */

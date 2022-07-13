@@ -7,6 +7,11 @@ body {
 
 }
 
+a {
+    color: #a8a8a8;
+    text-decoration: none;
+}
+
 .options>div {
     float: left;
     text-align: center;
@@ -86,7 +91,11 @@ ul {
 }
 
 .Subtitle {
-    font-size: 14px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 0 30%;
+    font-size: 0.6vw;
     color: rgb(187, 187, 187);
     letter-spacing: .05rem;
 }
