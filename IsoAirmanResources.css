@@ -82,6 +82,7 @@ ul {
     transition: 3s;
     color: #dbdbdb;
     font-size: large;
+    position: relative;
 }
 
 .Subtitle {
@@ -260,6 +261,21 @@ ul {
     cursor: pointer;
     color: #dadada;
     font-weight: 600;
+}
+
+.HomeButtonTop {
+    border: none;
+    border-radius: 0.3vw;
+    outline: none;
+    padding: 12px 16px;
+    left: 0.5%;
+    top: 12%;
+    width: 10%;
+    background-color: #5a5a5a;
+    cursor: pointer;
+    color: #dadada;
+    font-weight: 600;
+    position: absolute;
 }
 
 /* Add a light grey background on mouse-over */
