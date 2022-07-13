@@ -37,8 +37,8 @@
 
     <!-- Google Tag Manager (noscript) -->
     <noscript>
-        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WWWR5KS"
-                height="0" width="0" style="display:none;visibility:hidden"></iframe>
+        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WWWR5KS" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe>
     </noscript>
     <!-- End Google Tag Manager (noscript) -->
 
@@ -196,7 +196,7 @@
                     </div>
 
                     <img class="Notification" src="Images/Home Page/Icons/Notification.png" id="imgClickAndChange"
-                         onclick="changeImage()">
+                        onclick="changeImage()">
                 </div>
                 </img>
 
@@ -432,6 +432,8 @@
 
     today = mm + '/' + dd + '/' + yyyy;
 
+    var notifInfo = document.getElementsByClassName("NotificationInfo")[0];
+
     if (Date.parse(HydrodateStart) < Date.parse(today)) {
         Hydroelementcolor.style.color = 'red';
         alert("The pressure team listed on the site is OUT OF DATE!");
@@ -449,19 +451,14 @@
     function changeImage() {
         if (document.getElementById("imgClickAndChange").src == "Images/Home Page/Icons/Notification.png") {
             document.getElementById("imgClickAndChange").src = "Images/Home Page/News/Notification.png";
+            notifInfo.style.display = 'none'
         } else {
             document.getElementById("imgClickAndChange").src = "Images/Home Page/Icons/Bell.png";
-        }
-    }
-
-    function notificationInfoClick() {
-        if (document.getElementById("ImageBell").src == "Images/Home Page/Icons/Notification.png") {
-            document.getElementById("ImageBell").src = "Images/Home Page/News/Notification.png";
-        } else {
-            document.getElementById("imgClickAndChange").src = "Images/Home Page/Icons/Bell.png";
+            notifInfo.style.display = 'none'
         }
     }
 
     //WORK ON NOTIFICATION INFO WINDOW HIDING PERMANENTLY
 </script>
+
 </HTML>

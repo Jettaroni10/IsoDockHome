@@ -79,17 +79,17 @@ body {
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
 }
 
-    /*Light blue cover above the slide show*/
-    .card::after {
-        content: '';
-        position: absolute;
-        left: 0;
-        top: 0;
-        display: block;
-        width: 100%;
-        height: 100%;
-        background-color: rgba(0, 0, 0, 0.462);
-    }
+/*Light blue cover above the slide show*/
+.card::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.462);
+}
 
 .card_part {
     z-index: 4;
@@ -103,35 +103,35 @@ body {
     animation: opaqTransition 40s cubic-bezier(.1, 0, .1, 1) infinite;
 }
 
-    .card_part.card_part-two {
-        z-index: 3;
-        background-image: url('Images/Home Page/Slideshow/Iso2.png');
-        animation-delay: 10s;
-        width: 100%;
-        height: 100%;
-        min-height: 100%;
-        max-height: 100%;
-    }
+.card_part.card_part-two {
+    z-index: 3;
+    background-image: url('Images/Home Page/Slideshow/Iso2.png');
+    animation-delay: 10s;
+    width: 100%;
+    height: 100%;
+    min-height: 100%;
+    max-height: 100%;
+}
 
-    .card_part.card_part-three {
-        z-index: 2;
-        background-image: url('Images/Home Page/Slideshow/Iso3.png');
-        animation-delay: 20s;
-        width: 100%;
-        height: 100%;
-        min-height: 100%;
-        max-height: 100%;
-    }
+.card_part.card_part-three {
+    z-index: 2;
+    background-image: url('Images/Home Page/Slideshow/Iso3.png');
+    animation-delay: 20s;
+    width: 100%;
+    height: 100%;
+    min-height: 100%;
+    max-height: 100%;
+}
 
-    .card_part.card_part-four {
-        z-index: 1;
-        background-image: url('Images/Home Page/Slideshow/Iso4.png');
-        animation-delay: 30s;
-        width: 100%;
-        height: 100%;
-        min-height: 100%;
-        max-height: 100%;
-    }
+.card_part.card_part-four {
+    z-index: 1;
+    background-image: url('Images/Home Page/Slideshow/Iso4.png');
+    animation-delay: 30s;
+    width: 100%;
+    height: 100%;
+    min-height: 100%;
+    max-height: 100%;
+}
 
 @keyframes opaqTransition {
     3% {
@@ -179,14 +179,11 @@ body {
     z-index: 10;
 }
 
-    .Notification:hover {
-        background-color: #939393;
-        cursor: pointer;
-    }
-
-.ImageBell:focus .NotificationInfo {
-    opacity: 0%;
+.Notification:hover {
+    background-color: #939393;
+    cursor: pointer;
 }
+
 
 .ImageBell:focus .NotificationWindow {
     opacity: 100%;
@@ -205,7 +202,6 @@ body {
 }
 
 .NotificationInfo {
-    opacity: 100%;
     width: 600%;
     height: fit-content;
     margin: left;
@@ -228,7 +224,7 @@ body {
     opacity: 0%;
     width: 800%;
     height: fit-content;
-    background: rgb(53, 53, 53);
+    background: rgba(53, 53, 53, 0.599);
     color: #ffffff;
     border: 2px solid #ffffff;
     padding: 20%;
@@ -312,9 +308,9 @@ body {
     z-index: 10;
 }
 
-    .Vest:hover {
-        background-color: #939393;
-    }
+.Vest:hover {
+    background-color: #939393;
+}
 
 .ImageVest:focus .NotificationInfoHydraulic {
     opacity: 100%;
@@ -423,9 +419,9 @@ body {
     z-index: 10;
 }
 
-    .VestBleed:hover {
-        background-color: #939393;
-    }
+.VestBleed:hover {
+    background-color: #939393;
+}
 
 .ImageVestBleed:focus .NotificationInfoBleed {
     opacity: 100%;
@@ -463,12 +459,12 @@ h2 {
     color: #90ff2f;
 }
 
-#Notification:hover + #NotificationInfo {
+#Notification:hover+#NotificationInfo {
     transition: 2s;
     background: green;
 }
 
-.sidebar > * {
+.sidebar>* {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
@@ -496,22 +492,22 @@ h2 {
     overflow-y: auto;
 }
 
-    .sidebarnews:hover {
-        -webkit-mask-position: left top;
-    }
+.sidebarnews:hover {
+    -webkit-mask-position: left top;
+}
 
-    .sidebarnews::-webkit-scrollbar {
-        width: 0.5em;
-    }
+.sidebarnews::-webkit-scrollbar {
+    width: 0.5em;
+}
 
-    .sidebarnews::-webkit-scrollbar-track {
-        box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
-    }
+.sidebarnews::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
 
-    .sidebarnews::-webkit-scrollbar-thumb {
-        background-color: rgba(255, 174, 0, 0.627);
-        outline: 1px solid slategrey;
-    }
+.sidebarnews::-webkit-scrollbar-thumb {
+    background-color: rgba(255, 174, 0, 0.627);
+    outline: 1px solid slategrey;
+}
 
 .NEWS {
     width: 100%;
@@ -611,29 +607,29 @@ a.button1 {
     transition: 1s;
 }
 
-    a.button1:before {
-        width: 13%;
-        height: 2.5%;
-        content: 'View 3D Models';
-        background: rgba(0, 0, 0, 0.6);
-        font-size: 1vw;
-        position: absolute;
-        transition: 500ms;
-    }
+a.button1:before {
+    width: 13%;
+    height: 2.5%;
+    content: 'View 3D Models';
+    background: rgba(0, 0, 0, 0.6);
+    font-size: 1vw;
+    position: absolute;
+    transition: 500ms;
+}
 
-    a.button1:hover:before {
-        background: rgba(0, 0, 0, 0);
-        text-shadow: 1px 1px 1px black;
-    }
+a.button1:hover:before {
+    background: rgba(0, 0, 0, 0);
+    text-shadow: 1px 1px 1px black;
+}
 
-    a.button1:hover {
-        background-position: left -50px;
-        box-shadow: 0px 0px 10px rgba(232, 218, 26, 0.5);
-    }
+a.button1:hover {
+    background-position: left -50px;
+    box-shadow: 0px 0px 10px rgba(232, 218, 26, 0.5);
+}
 
-    a.button1:focus {
-        outline: none;
-    }
+a.button1:focus {
+    outline: none;
+}
 
 .button2,
 .button2:before {
@@ -656,29 +652,29 @@ a.button1 {
     transition: 1s;
 }
 
-    .button2:before {
-        width: 13%;
-        height: 2.5%;
-        content: 'Crew Chief Resources';
-        background: rgba(0, 0, 0, 0.6);
-        font-size: 1vw;
-        position: absolute;
-        transition: 500ms;
-    }
+.button2:before {
+    width: 13%;
+    height: 2.5%;
+    content: 'Crew Chief Resources';
+    background: rgba(0, 0, 0, 0.6);
+    font-size: 1vw;
+    position: absolute;
+    transition: 500ms;
+}
 
-    .button2:hover:before {
-        background: rgba(0, 0, 0, 0);
-        text-shadow: 1px 1px 1px black;
-    }
+.button2:hover:before {
+    background: rgba(0, 0, 0, 0);
+    text-shadow: 1px 1px 1px black;
+}
 
-    .button2:hover {
-        background-position: center;
-        box-shadow: 0px 0px 10px rgba(232, 218, 26, 0.5);
-    }
+.button2:hover {
+    background-position: center;
+    box-shadow: 0px 0px 10px rgba(232, 218, 26, 0.5);
+}
 
-    .button2:focus {
-        outline: none;
-    }
+.button2:focus {
+    outline: none;
+}
 
 .button3,
 .button3:before {
@@ -701,29 +697,29 @@ a.button1 {
     transition: 1s;
 }
 
-    .button3:before {
-        width: 13%;
-        height: 2.5%;
-        content: 'Tool Accountability';
-        background: rgba(0, 0, 0, 0.6);
-        font-size: 1vw;
-        position: absolute;
-        transition: 500ms;
-    }
+.button3:before {
+    width: 13%;
+    height: 2.5%;
+    content: 'Tool Accountability';
+    background: rgba(0, 0, 0, 0.6);
+    font-size: 1vw;
+    position: absolute;
+    transition: 500ms;
+}
 
-    .button3:hover:before {
-        background: rgba(0, 0, 0, 0);
-        text-shadow: 1px 1px 1px black;
-    }
+.button3:hover:before {
+    background: rgba(0, 0, 0, 0);
+    text-shadow: 1px 1px 1px black;
+}
 
-    .button3:hover {
-        background-position: center;
-        box-shadow: 0px 0px 10px rgba(232, 218, 26, 0.5);
-    }
+.button3:hover {
+    background-position: center;
+    box-shadow: 0px 0px 10px rgba(232, 218, 26, 0.5);
+}
 
-    .button3:focus {
-        outline: none;
-    }
+.button3:focus {
+    outline: none;
+}
 
 .button4,
 .button4:before {
@@ -746,29 +742,29 @@ a.button1 {
     transition: 1s;
 }
 
-    .button4:before {
-        width: 13%;
-        height: 2.5%;
-        content: 'Feedback';
-        background: rgba(0, 0, 0, 0.6);
-        font-size: 1vw;
-        position: absolute;
-        transition: 500ms;
-    }
+.button4:before {
+    width: 13%;
+    height: 2.5%;
+    content: 'Feedback';
+    background: rgba(0, 0, 0, 0.6);
+    font-size: 1vw;
+    position: absolute;
+    transition: 500ms;
+}
 
-    .button4:hover:before {
-        background: rgba(0, 0, 0, 0);
-        text-shadow: 1px 1px 1px black;
-    }
+.button4:hover:before {
+    background: rgba(0, 0, 0, 0);
+    text-shadow: 1px 1px 1px black;
+}
 
-    .button4:hover {
-        background-position: center;
-        box-shadow: 0px 0px 10px rgba(232, 218, 26, 0.5);
-    }
+.button4:hover {
+    background-position: center;
+    box-shadow: 0px 0px 10px rgba(232, 218, 26, 0.5);
+}
 
-    .button4:focus {
-        outline: none;
-    }
+.button4:focus {
+    outline: none;
+}
 
 .button5,
 .button5:before {
@@ -791,29 +787,29 @@ a.button1 {
     transition: 1s;
 }
 
-    .button5:before {
-        width: 13%;
-        height: 2.5%;
-        content: 'Social';
-        background: rgba(0, 0, 0, 0.6);
-        font-size: 1vw;
-        position: absolute;
-        transition: 500ms;
-    }
+.button5:before {
+    width: 13%;
+    height: 2.5%;
+    content: 'Social';
+    background: rgba(0, 0, 0, 0.6);
+    font-size: 1vw;
+    position: absolute;
+    transition: 500ms;
+}
 
-    .button5:hover:before {
-        background: rgba(0, 0, 0, 0);
-        text-shadow: 1px 1px 1px black;
-    }
+.button5:hover:before {
+    background: rgba(0, 0, 0, 0);
+    text-shadow: 1px 1px 1px black;
+}
 
-    .button5:hover {
-        background-position: center;
-        box-shadow: 0px 0px 10px rgba(232, 218, 26, 0.5);
-    }
+.button5:hover {
+    background-position: center;
+    box-shadow: 0px 0px 10px rgba(232, 218, 26, 0.5);
+}
 
-    .button5:focus {
-        outline: none;
-    }
+.button5:focus {
+    outline: none;
+}
 
 .button6,
 .button6:before {
@@ -836,26 +832,26 @@ a.button1 {
     transition: 1s;
 }
 
-    .button6:before {
-        width: 13%;
-        height: 2.5%;
-        content: 'About Us';
-        background: rgba(0, 0, 0, 0.6);
-        position: absolute;
-        transition: 500ms;
-        font-size: 1vw;
-    }
+.button6:before {
+    width: 13%;
+    height: 2.5%;
+    content: 'About Us';
+    background: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    transition: 500ms;
+    font-size: 1vw;
+}
 
-    .button6:hover:before {
-        background: rgba(0, 0, 0, 0);
-        text-shadow: 1px 1px 1px black;
-    }
+.button6:hover:before {
+    background: rgba(0, 0, 0, 0);
+    text-shadow: 1px 1px 1px black;
+}
 
-    .button6:hover {
-        background-position: center;
-        box-shadow: 0px 0px 10px rgba(232, 218, 26, 0.5);
-    }
+.button6:hover {
+    background-position: center;
+    box-shadow: 0px 0px 10px rgba(232, 218, 26, 0.5);
+}
 
-    .button6:focus {
-        outline: none;
-    }
+.button6:focus {
+    outline: none;
+}
