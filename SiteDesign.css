@@ -183,7 +183,7 @@ a {
     font-size: large;
     position: absolute;
     right: 0%;
-
+    line-height: 1vh;
 }
 
 .Notification {
@@ -553,6 +553,99 @@ a {
     letter-spacing: 100%;
     font-family: 'Courier New', Courier, monospace;
 }
+
+
+
+
+
+
+
+
+
+.Tail {
+    display: block;
+    background-color: #757575;
+    border-style: solid;
+    border-color: #a8a8a8;
+    border-radius: 5px;
+    left: 15%;
+    height: 35%;
+    width: 100%;
+    z-index: 10;
+}
+
+.Tail:hover {
+    background-color: #939393;
+}
+
+.PositionsTail {
+    opacity: 0%;
+    width: 100%;
+    height: fit-content;
+    margin: left;
+    border-radius: 5px;
+    background: rgba(84, 84, 84, 0.723);
+    transition: 0.5s;
+    color: #ffffff;
+    border: 2px solid #ffffff;
+    padding: 2%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: medium;
+    font-weight: 900;
+    right: 110%;
+    top: 0%;
+    line-height: 200%;
+    pointer-events: none;
+}
+
+
+.ImageTail:focus .NotificationInfoTail {
+    opacity: 100%;
+}
+
+.ImageTail:focus .PositionsTail {
+    opacity: 100%;
+}
+
+.NotificationInfoTail {
+    opacity: 0%;
+    width: 700%;
+    height: fit-content;
+    margin: left;
+    border-radius: 5px;
+    background: rgb(19, 19, 19);
+    transition: 0.5s;
+    border: 2px solid #ffffff;
+    padding: 20%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: medium;
+    font-weight: 900;
+    right: 110%;
+    top: 0%;
+    line-height: 200%;
+    position: absolute;
+    pointer-events: none;
+}
+
+
+.DateandTimeTail {
+    font-size: 0.8vw;
+    letter-spacing: 100%;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.DateTail {
+    font-size: 0.8vw;
+    color: #90ff2f;
+    letter-spacing: 100%;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+
+
+
+
+
 
 
 

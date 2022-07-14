@@ -38,7 +38,7 @@
     <!-- Google Tag Manager (noscript) -->
     <noscript>
         <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WWWR5KS" height="0" width="0"
-                style="display:none;visibility:hidden"></iframe>
+            style="display:none;visibility:hidden"></iframe>
     </noscript>
     <!-- End Google Tag Manager (noscript) -->
 
@@ -200,9 +200,10 @@
                     </div>
 
                     <img class="Notification" src="Images/Home Page/Icons/Notification.png" id="imgClickAndChange"
-                         onclick="changeImage()">
+                        onclick="changeImage()">
                 </div>
                 </img>
+                <br>
 
                 <div class="ImageVest" tabindex="1">
                     <div class="NotificationInfoHydraulic">
@@ -245,6 +246,9 @@
                 </div>
                 </img>
 
+                <br>
+
+
                 <div class="ImageVestBleed" tabindex="1">
                     <div class="NotificationInfoBleed">
                         <center>
@@ -283,6 +287,9 @@
                 </div>
                 </img>
 
+                <br>
+
+
                 <div class="ImageYuke" tabindex="1">
                     <div class="NotificationInfoYuke">
                         <center>
@@ -318,6 +325,49 @@
                     <img class="Yuke" src="Images/Home Page/Icons/Yuke.png">
                 </div>
                 </img>
+
+                <br>
+
+
+                <div class="ImageTail" tabindex="1">
+                    <div class="NotificationInfoTail">
+                        <center>
+                            <div class="DateandTimeTail">
+                                UPDATED:
+                                <br>
+                                <div class="DateTail">
+                                    2022/07/13
+                                </div>
+                            </div>
+
+                            <div class="PositionsTail">
+
+                                <h2>
+                                    Tail Stand Tow Team:
+                                </h2>
+                                <h3>
+                                    <div class="position">Tow Supervisor:</div> TSgt Mckenzie
+                                    <hr>
+                                    <div class="position">Stand Driver:</div> SSgt Evans
+                                    <hr>
+                                    <div class="position">Dead Man's Switch:</div> SrA Shaffer
+                                    <hr>
+                                    <div class="position">Dead Man's Switch:</div> SrA Willden
+                                    <hr>
+                                    <div class="position">Dead Man's Switch:</div> SrA Dickey
+                                    <hr>
+                                    <div class="position">Dead Man's Switch:</div> SrA Serrano
+                                </h3>
+                            </div>
+                        </center>
+                    </div>
+                    <img class="Tail" src="Images/Home Page/Icons/TailStand.png">
+                </div>
+                </img>
+
+
+
+
             </div>
         </div>
         </img>
@@ -468,6 +518,9 @@
     const Yukeelementcolor = document.querySelector('.DateYuke');
     var YukedateStart = document.querySelector('.DateYuke').innerText;
 
+    const Tailelementcolor = document.querySelector('.DateTail');
+    var TaildateStart = document.querySelector('.DateTail').innerText;
+
     var today = new Date();
     var dd = String(today.getDate()).padStart(2, '0');
     var mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
@@ -498,6 +551,13 @@
 
     }
 
+    if (Date.parse(TaildateStart) < Date.parse(today)) {
+        Tailelementcolor.style.color = 'red';
+        alert("The tail stand tow team listed on the site is OUT OF DATE!");
+    } else {
+
+    }
+
     function changeImage() {
         if (document.getElementById("imgClickAndChange").src == "Images/Home Page/Icons/Notification.png") {
             document.getElementById("imgClickAndChange").src = "Images/Home Page/News/Notification.png";
@@ -510,4 +570,5 @@
 
     //WORK ON NOTIFICATION INFO WINDOW HIDING PERMANENTLY
 </script>
+
 </HTML>
