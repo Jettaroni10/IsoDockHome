@@ -38,7 +38,7 @@
     <!-- Google Tag Manager (noscript) -->
     <noscript>
         <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WWWR5KS" height="0" width="0"
-            style="display:none;visibility:hidden"></iframe>
+                style="display:none;visibility:hidden"></iframe>
     </noscript>
     <!-- End Google Tag Manager (noscript) -->
 
@@ -200,7 +200,7 @@
                     </div>
 
                     <img class="Notification" src="Images/Home Page/Icons/Notification.png" id="imgClickAndChange"
-                        onclick="changeImage()">
+                         onclick="changeImage()">
                 </div>
                 </img>
 
@@ -318,8 +318,6 @@
                     <img class="Yuke" src="Images/Home Page/Icons/Yuke.png">
                 </div>
                 </img>
-
-
             </div>
         </div>
         </img>
@@ -467,6 +465,9 @@
     const Bleedelementcolor = document.querySelector('.DateBleed');
     var BleeddateStart = document.querySelector('.DateBleed').innerText;
 
+    const Yukeelementcolor = document.querySelector('.DateYuke');
+    var YukedateStart = document.querySelector('.DateYuke').innerText;
+
     var today = new Date();
     var dd = String(today.getDate()).padStart(2, '0');
     var mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
@@ -490,6 +491,13 @@
 
     }
 
+    if (Date.parse(YukedateStart) < Date.parse(today)) {
+        Yukeelementcolor.style.color = 'red';
+        alert("The tow team listed on the site is OUT OF DATE!");
+    } else {
+
+    }
+
     function changeImage() {
         if (document.getElementById("imgClickAndChange").src == "Images/Home Page/Icons/Notification.png") {
             document.getElementById("imgClickAndChange").src = "Images/Home Page/News/Notification.png";
@@ -502,5 +510,4 @@
 
     //WORK ON NOTIFICATION INFO WINDOW HIDING PERMANENTLY
 </script>
-
 </HTML>
