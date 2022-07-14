@@ -186,6 +186,31 @@ a {
     line-height: 1vh;
 }
 
+.CurrentInfo {
+    z-index: 5;
+    display: block;
+    width: fit-content;
+    padding: 0.4%;
+    height: fit-content;
+    margin: left;
+    background: #000000;
+    transition: 3s;
+    color: #dbdbdbac;
+    font-size: 1vw;
+    position: absolute;
+    left: 0%;
+    line-height: 2vh;
+}
+
+.ActualInfo {
+    display: block;
+    background-color: #7575751a;
+    border-style: solid;
+    border-color: #a8a8a873;
+    z-index: 10;
+    font-family: 'Courier New', Courier, monospace;
+}
+
 .Notification {
     display: block;
     background-color: #757575;
