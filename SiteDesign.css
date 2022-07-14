@@ -752,6 +752,10 @@ h2 {
     font-size: 0.8vw;
 }
 
+.NewsDate {
+    color: rgb(0, 187, 255);
+}
+
 .seemore {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     color: rgb(255, 153, 0);
