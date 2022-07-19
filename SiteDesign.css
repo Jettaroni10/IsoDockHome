@@ -756,7 +756,17 @@ h2 {
     color: rgb(0, 187, 255);
 }
 
-.seemore {
+.seemore1 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: rgb(255, 153, 0);
+}
+
+.seemore2 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: rgb(255, 153, 0);
+}
+
+.seemore3 {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     color: rgb(255, 153, 0);
 }
@@ -972,7 +982,7 @@ a.button1:focus {
 .button4:before {
     width: 13%;
     height: 2.5%;
-    content: 'Feedback';
+    content: 'Calendar';
     background: rgba(0, 0, 0, 0.6);
     font-size: 1vw;
     position: absolute;
