@@ -1,6 +1,8 @@
 body {
     background: linear-gradient(217deg, rgba(142, 85, 59, 0.8), rgba(47, 21, 12, 0.8) 70.71%), linear-gradient(127deg, rgba(161, 161, 161, 0.8), rgba(156, 117, 33, 0.8) 70.71%), linear-gradient(336deg, rgba(212, 209, 203, 0.8), rgba(208, 208, 218, 0.8) 70.71%);
     padding: 0.5%;
+    overflow: hidden;
+    overflow-x: hidden;
 }
 
 a {
@@ -84,12 +86,40 @@ a {
     font-size: 45;
 }
 
-.MainMeat {
-    border: 100px;
-    border-color: rgb(37, 37, 37);
+#wrapper {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    overflow: hidden;
+}
+
+#scaled-frame {
     position: absolute;
-    bottom: 200;
-    right: 20;
+    left: 15%;
+    width: 119%;
+    height: 118%;
+    overflow: hidden;
+    border-style: solid;
+    border-width: 2.5px;
+    border-radius: 5px;
+    border-color: #f09819;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+#scaled-frame {
+    zoom: 0.71;
+    -moz-transform: scale(0.71);
+    -moz-transform-origin: 0 0;
+    -o-transform: scale(0.71);
+    -o-transform-origin: 0 0;
+    -webkit-transform: scale(0.71);
+    -webkit-transform-origin: 0 0;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    #scaled-frame {
+        zoom: 1;
+    }
 }
 
 .Test0 {
@@ -97,12 +127,7 @@ a {
     align-items: flex-end;
 }
 
-.sidebarnews {
-    width: 300px;
-    height: 800px;
-    margin: left;
-    background-color: rgb(15, 15, 15);
-}
+
 
 .ThreeDee {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -184,6 +209,76 @@ a {
     font-size: 15px;
 }
 
+.sidebarmodel {
+    width: 13.43%;
+    margin: left;
+    border-radius: 5px;
+    background: #313131;
+    transition: 3s;
+    color: #f0a953;
+    font-size: large;
+    border: 1px solid #f9951b;
+    overflow-x: hidden;
+    height: 62.5%;
+    overflow-y: auto;
+}
+
+.sidebarmodel:hover {
+    -webkit-mask-position: left top;
+}
+
+.sidebarmodel::-webkit-scrollbar {
+    width: 0.5em;
+}
+
+.sidebarmodel::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+.sidebarmodel::-webkit-scrollbar-thumb {
+    background-color: rgba(255, 174, 0, 0.627);
+    outline: 1px solid slategrey;
+}
+
+.MODELTitle {
+    width: 100%;
+    margin: left;
+    color: #313131;
+    background-clip: text;
+    transition: 0.5s;
+    font-size: 1.2vw;
+    border-radius: 5px;
+    background: #f9951b;
+    border-bottom: 2px solid #313131;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 800;
+}
+
+.NEWSTEXT {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #b9b9b9;
+    font-size: 0.8vw;
+}
+
+.NewsDate {
+    color: rgb(0, 187, 255);
+}
+
+.seemore1 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: rgb(255, 153, 0);
+}
+
+.seemore2 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: rgb(255, 153, 0);
+}
+
+.seemore3 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: rgb(255, 153, 0);
+}
+
 .Phone {
     display: flex;
     align-items: flex-end;
@@ -217,7 +312,7 @@ a.button1 {
     height: 10%;
     cursor: pointer;
     font-family: 'Play', sans-serif;
-    font-size: 20px;
+    margin: 1 0%;
     color: white;
     border: none;
     background-image: url("https://assets.codepen.io/3305358/hazard-stripes-wallpaper.jpg");
@@ -229,8 +324,9 @@ a.button1 {
 a.button1:before {
     width: 13%;
     height: 2.5%;
-    content: 'Home';
+    content: 'View 3D Models';
     background: rgba(0, 0, 0, 0.6);
+    font-size: 1vw;
     position: absolute;
     transition: 500ms;
 }
@@ -261,7 +357,7 @@ a.button1:focus {
     height: 10%;
     cursor: pointer;
     font-family: 'Play', sans-serif;
-    font-size: 20px;
+    margin: 1 0%;
     color: white;
     border: none;
     background-image: url("https://assets.codepen.io/3305358/hazard-stripes-wallpaper.jpg");
@@ -273,8 +369,9 @@ a.button1:focus {
 .button2:before {
     width: 13%;
     height: 2.5%;
-    content: 'View 3D Models';
+    content: 'Crew Chief Resources';
     background: rgba(0, 0, 0, 0.6);
+    font-size: 1vw;
     position: absolute;
     transition: 500ms;
 }
@@ -305,7 +402,7 @@ a.button1:focus {
     height: 10%;
     cursor: pointer;
     font-family: 'Play', sans-serif;
-    font-size: 20px;
+    margin: 1 0%;
     color: white;
     border: none;
     background-image: url("https://assets.codepen.io/3305358/hazard-stripes-wallpaper.jpg");
@@ -317,8 +414,9 @@ a.button1:focus {
 .button3:before {
     width: 13%;
     height: 2.5%;
-    content: 'Tech Support';
+    content: 'Tool Accountability';
     background: rgba(0, 0, 0, 0.6);
+    font-size: 1vw;
     position: absolute;
     transition: 500ms;
 }
@@ -349,7 +447,7 @@ a.button1:focus {
     height: 10%;
     cursor: pointer;
     font-family: 'Play', sans-serif;
-    font-size: 20px;
+    margin: 1 0%;
     color: white;
     border: none;
     background-image: url("https://assets.codepen.io/3305358/hazard-stripes-wallpaper.jpg");
@@ -361,8 +459,9 @@ a.button1:focus {
 .button4:before {
     width: 13%;
     height: 2.5%;
-    content: 'Feedback';
+    content: 'Calendar';
     background: rgba(0, 0, 0, 0.6);
+    font-size: 1vw;
     position: absolute;
     transition: 500ms;
 }
@@ -393,7 +492,7 @@ a.button1:focus {
     height: 10%;
     cursor: pointer;
     font-family: 'Play', sans-serif;
-    font-size: 20px;
+    margin: 1 0%;
     color: white;
     border: none;
     background-image: url("https://assets.codepen.io/3305358/hazard-stripes-wallpaper.jpg");
@@ -407,6 +506,7 @@ a.button1:focus {
     height: 2.5%;
     content: 'Social';
     background: rgba(0, 0, 0, 0.6);
+    font-size: 1vw;
     position: absolute;
     transition: 500ms;
 }
@@ -437,7 +537,7 @@ a.button1:focus {
     height: 10%;
     cursor: pointer;
     font-family: 'Play', sans-serif;
-    font-size: 20px;
+    margin: 1 0%;
     color: white;
     border: none;
     background-image: url("https://assets.codepen.io/3305358/hazard-stripes-wallpaper.jpg");
@@ -453,6 +553,7 @@ a.button1:focus {
     background: rgba(0, 0, 0, 0.6);
     position: absolute;
     transition: 500ms;
+    font-size: 1vw;
 }
 
 .button6:hover:before {
