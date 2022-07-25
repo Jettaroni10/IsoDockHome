@@ -31,9 +31,36 @@
 
         gtag('config', 'G-JZ7RFZ0TCP');
     </script>
+
+    <script type="text/javascript">
+        function saveEdits() {
+
+            //get the editable element
+            var editElem = document.getElementsByClassName('NEWSTEXT')[0];
+
+            //get the edited element content
+            var userVersion = editElem.innerHTML;
+
+            //save the content to local storage
+            localStorage.userEdits = userVersion;
+
+            //write a confirmation to the user
+            document.getElementById("update").innerHTML = "Edits saved!";
+
+
+
+        }
+
+        function checkEdits() {
+
+            //find out if the user has previously saved edits
+            if (localStorage.userEdits != null)
+                document.getElementsByClassName('NEWSTEXT')[0].innerHTML = localStorage.userEdits;
+        }
+    </script>
 </HEAD>
 
-<BODY>
+<BODY onload="checkEdits()" spellcheck="false">
 
     <!-- Google Tag Manager (noscript) -->
     <noscript>
@@ -53,6 +80,10 @@
                         <div class="Title">
                             Iso-Chronal Inspection Dock
                         </div>
+                        <button onclick="location.href='todolist.html'" type="button" <div class="HomeButtonTop" />
+                        Developer
+
+                        </button>
                         <hr color="orange">
 
                         <div class="Subtitle">
@@ -223,7 +254,7 @@
                                 UPDATED:
                                 <br>
                                 <div class="DateHydro">
-                                    2022/07/15
+                                    2022/07/21
                                 </div>
                             </div>
                             <div class="PositionsHydro">
@@ -269,7 +300,7 @@
                                 UPDATED:
                                 <br>
                                 <div class="DateBleed">
-                                    2022/07/15
+                                    2022/07/23
                                 </div>
                             </div>
 
@@ -310,7 +341,7 @@
                                 UPDATED:
                                 <br>
                                 <div class="DateYuke">
-                                    2022/07/15
+                                    2022/07/25
                                 </div>
                             </div>
 
@@ -320,17 +351,17 @@
                                     Tow Team:
                                 </h2>
                                 <h3>
-                                    <div class="position">Tow Supervisor:</div> TSgt Mckenzie
+                                    <div class="position" contenteditable="true">Tow Supervisor:</div> TSgt Mckenzie
                                     <hr>
-                                    <div class="position">Yuke Driver:</div> SSgt Evans
+                                    <div class="position" contenteditable="true">Yuke Driver:</div> SSgt Evans
                                     <hr>
-                                    <div class="position">Brake Operator:</div> SrA Shaffer
+                                    <div class="position" contenteditable="true">Brake Operator:</div> SrA Shaffer
                                     <hr>
-                                    <div class="position">Tail Walker:</div> SrA Willden
+                                    <div class="position" contenteditable="true">Tail Walker:</div> SrA Willden
                                     <hr>
-                                    <div class="position">Left Wing Walker:</div> SrA Dickey
+                                    <div class="position" contenteditable="true">Left Wing Walker:</div> SrA Dickey
                                     <hr>
-                                    <div class="position">Right Wing Walker:</div> SrA Serrano
+                                    <div class="position" contenteditable="true">Right Wing Walker:</div> SrA Serrano
                                 </h3>
                             </div>
                         </center>
@@ -349,7 +380,7 @@
                                 UPDATED:
                                 <br>
                                 <div class="DateTail">
-                                    2022/07/15
+                                    2022/07/25
                                 </div>
                             </div>
 
@@ -452,7 +483,7 @@
         </div>
 
         <center>
-            <div class="NEWSTEXT">
+            <div class="NEWSTEXT" contenteditable="true">
                 _____________________________________
                 <br><br>
                 <img src="Images/Home Page/News/VirtualReality.jpg" width="80%">
@@ -522,6 +553,9 @@
                     <br>
                 </div>
                 _____________________________________
+                <br>
+                <input type="button" value="Save" onclick="saveEdits()" />
+                <div id="update"> - Edit the text and click to save for next time</div>
             </div>
         </center>
         <br>
@@ -589,7 +623,9 @@
         }
     }
 
-    //WORK ON NOTIFICATION INFO WINDOW HIDING PERMANENTLY
+
+
+
 </script>
 
 </HTML>
