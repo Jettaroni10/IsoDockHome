@@ -162,6 +162,17 @@ a {
     animation: opaqTransition 50s cubic-bezier(0.42, 0, 0.58, 1) infinite;
 }
 
+.card_part.card_part-two {
+    z-index: 3;
+    background-image: url('Images/Home Page/Slideshow/Iso2.jpg');
+    background-size: cover;
+    animation-delay: 12.5s;
+    width: 100%;
+    height: 100%;
+    min-height: 100%;
+    max-height: 100%;
+}
+
 .card_part.card_part-three {
     z-index: 2;
     background-image: url('Images/Home Page/Slideshow/Iso3.jpg');
@@ -395,6 +406,7 @@ a {
 
 .Vest:hover {
     background-color: #939393;
+    cursor: pointer;
 }
 
 .ImageVest:focus,
@@ -510,6 +522,7 @@ a {
 
 .VestBleed:hover {
     background-color: #939393;
+    cursor: pointer;
 }
 
 .ImageVestBleed:focus .NotificationInfoBleed {
@@ -554,6 +567,7 @@ a {
 
 .Yuke:hover {
     background-color: #939393;
+    cursor: pointer;
 }
 
 .PositionsYuke {
@@ -631,6 +645,8 @@ a {
 
 .Tail:hover {
     background-color: #939393;
+    cursor: pointer;
+
 }
 
 .PositionsTail {
@@ -696,6 +712,12 @@ a {
 
 .position {
     color: #F09819;
+}
+
+.OUTOFDATE {
+    background-color: red;
+    width: 100%;
+    height: fit-content;
 }
 
 h2 {
@@ -789,6 +811,36 @@ h2 {
 .seemore3 {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     color: rgb(255, 153, 0);
+}
+
+.Knucklebuster {
+    display: block;
+    background-color: #202020;
+    border: #5691f7;
+    border-style: solid;
+    border-width: 0.1vw;
+}
+
+.News1 {
+    display: block;
+    background-color: #202020;
+    border: #828282;
+    border-style: solid;
+    border-width: 0.1vw;
+}
+
+.News2 {
+    display: block;
+    background-color: #202020;
+    border: #ff9412;
+    border-style: solid;
+    border-width: 0.1vw;
+}
+
+.knucklebusterimage {
+    border: #90ff2f;
+    border-width: 5%;
+    border-radius: 2%;
 }
 
 .Phone {

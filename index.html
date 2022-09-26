@@ -2,7 +2,7 @@
 
 <HEAD>
     <title>
-        IsoDock Home
+        IsoDock
     </title>
 
     <link rel="icon" href="c5logo.png" type="image/x-icon">
@@ -154,7 +154,12 @@
                     <br>
                     Roll Date: When we're ready
                 </div>
+                <div class="OUTOFDATE">
+                    OUT OF DATE!
+                </div>
             </div>
+
+
 
             <div class="SideBarImage">
                 <div class="ImageBell" tabindex="1">
@@ -253,7 +258,7 @@
                                 UPDATED:
                                 <br>
                                 <div class="DateHydro">
-                                    2022/08/15
+                                    2022/09/15
                                 </div>
                             </div>
                             <div class="PositionsHydro">
@@ -298,7 +303,7 @@
                                 UPDATED:
                                 <br>
                                 <div class="DateBleed">
-                                    2022/08/15
+                                    2022/09/15
                                 </div>
                             </div>
 
@@ -338,7 +343,7 @@
                                 UPDATED:
                                 <br>
                                 <div class="DateYuke">
-                                    2022/08/15
+                                    2022/09/15
                                 </div>
                             </div>
 
@@ -376,7 +381,7 @@
                                 UPDATED:
                                 <br>
                                 <div class="DateTail">
-                                    2022/08/15
+                                    2022/09/15
                                 </div>
                             </div>
 
@@ -469,63 +474,17 @@
 
             <center>
                 <b>
-                    ISODOCK NEWS
+                    News Center
                 </b>
             </center>
         </div>
 
         <center>
-            <div class="NEWSTEXT" contenteditable="true">
-                _____________________________________
-                <br><br>
-                <img src="Images/Home Page/News/VirtualReality.jpg" width="80%">
+            <div class="Knucklebuster">
+
+                <img src="Images/Home Page/News/KnuckleBuster.png" width="90%">
                 <br>
-
-                <br>
-                <div class="NewsDate">
-                    -------20220504 @ 0800 hrs-------
-                </div>
-                <br>
-                A Dover AFB airman (Jett J. Spaulding) is
-                finding new ways to innovate for his squadron
-                using virtual reality.
-                <br>
-
-                <br>
-
-                <div class="seemore1">
-
-                    <b>
-                        See more >>>
-                    </b>
-                    <br>
-                </div>
-                _____________________________________
-
-                <br><br>
-                <img src="Images/Home Page/News/Production.jpg" width="80%">
-                <br>
-
-                <br>
-                <div class="NewsDate">
-                    -------20220504 @ 1000 hrs-------
-                </div>
-                <br>
-
-                Iso production team says Virtual Reality Training is "A good idea".
-
-                <br><br>
-
-                <div class="seemore2">
-                    <b>
-                        See more >>>
-                    </b>
-                    <br>
-                </div>
-                _____________________________________
-
-                <br><br>
-                <img src="Images/Home Page/News/Willden.JPG" width="80%">
+                <img class="knucklebusterimage" src="Images/Home Page/News/Willden.JPG" width="80%">
                 <br>
 
                 <br>
@@ -536,21 +495,36 @@
                 Crew chiefs celebrate 'knucklebuster' Brandon Willden.
 
                 <br><br>
-
-                <div class="seemore3">
-                    <b>
-                        See more >>>
-                    </b>
-                    <br>
-                </div>
-                _____________________________________
-                <br>
-                <br>
-                <input type="button" value="Save" onclick="saveEdits()" />
-                <br>
-                <br>
-                <div id="update"> - Edit the text and click to save for next time</div>
             </div>
+            <div class="News1">
+                <br>
+                <img class="news1image" src="Images/Home Page/News/Production.jpg" width="80%">
+                <br>
+
+                <br>
+                <div class="NewsDate">
+                    -------20220504 @ 0800 hrs-------
+                </div>
+                <br>
+                Commander's call @1200 20220920
+
+                <br><br>
+            </div>
+            <div class="News2">
+                <br>
+                <img class="news1image" src="Images/Home Page/News/VirtualReality.jpg" width="80%">
+                <br>
+
+                <br>
+                <div class="NewsDate">
+                    -------20220504 @ 0800 hrs-------
+                </div>
+                <br>
+                Virtual reality training program for ISO is under development!
+
+                <br><br>
+            </div>
+
         </center>
         <br>
     </div>
@@ -581,10 +555,12 @@
 
     if (Date.parse(HydrodateStart) < Date.parse(today)) {
         Hydroelementcolor.style.color = 'red';
-        alert("The pressure team listed on the site is OUT OF DATE!");
+        document.getElementsByClassName("OUTOFDATE").style.display = 'none';
     } else {
+        document.getElementsByClassName("OUTOFDATE").style.display = 'none';
 
     }
+
 
     if (Date.parse(BleeddateStart) < Date.parse(today)) {
         Bleedelementcolor.style.color = 'red';
