@@ -559,13 +559,6 @@
 
     }
 
-    if (document.getElementsByClassName("OUTOFDATE").style.display === "block") {
-        document.getElementsByClassName("OUTOFDATE").style.display = "none";
-    } else {
-        document.getElementsByClassName("OUTOFDATE").style.display === "none"
-    }
-
-
     if (Date.parse(BleeddateStart) < Date.parse(today)) {
         Bleedelementcolor.style.color = 'red';
         alert("The bleed-air team listed on the site is OUT OF DATE!");
