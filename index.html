@@ -474,7 +474,7 @@
 
             <center>
                 <b>
-                    News Center
+                    News
                 </b>
             </center>
         </div>
@@ -555,10 +555,14 @@
 
     if (Date.parse(HydrodateStart) < Date.parse(today)) {
         Hydroelementcolor.style.color = 'red';
-        document.getElementsByClassName("OUTOFDATE").style.display = 'none';
     } else {
-        document.getElementsByClassName("OUTOFDATE").style.display = 'none';
 
+    }
+
+    if (document.getElementsByClassName("OUTOFDATE").style.display === "block") {
+        document.getElementsByClassName("OUTOFDATE").style.display = "none";
+    } else {
+        document.getElementsByClassName("OUTOFDATE").style.display === "none"
     }
 
 

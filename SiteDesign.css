@@ -715,6 +715,7 @@ a {
 }
 
 .OUTOFDATE {
+    display: block;
     background-color: red;
     width: 100%;
     height: fit-content;
