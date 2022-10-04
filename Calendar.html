@@ -7,11 +7,130 @@
 
     <link rel="icon" href="c5logo.png" type="image/x-icon">
 
-    <link rel="stylesheet" href="SiteDesignCalendar.css">
-    <link rel="stylesheet" type="text/css"
-        href="https://cdn.jsdelivr.net/npm/evo-calendar@1.1.2/evo-calendar/css/evo-calendar.min.css" />
+    <link href='fullcalendar/lib/main.css' rel='stylesheet' />
+    <script src='fullcalendar/lib/main.js'></script>
+    <script>
+        import React from 'react'
+        import FullCalendar from '@fullcalendar/react' // must go before plugins
+        import dayGridPlugin from '@fullcalendar/daygrid' // a plugin!
 
-    <script type="text/javascript" src="Calendar.js"></script>
+        export default class DemoApp extends React.Component {
+            render() {
+                return (
+                    <FullCalendar
+                        plugins={[dayGridPlugin]}
+                        initialView="dayGridMonth"
+                    />
+                )
+            }
+        }
+        document.addEventListener('DOMContentLoaded', function () {
+            var calendarEl = document.getElementById('calendar');
+            var calendar = new FullCalendar.Calendar(calendarEl, {
+                initialView: 'dayGridMonth'
+            });
+            calendar.render();
+        });
+
+    </script>
+
+    <script>
+
+        document.addEventListener('DOMContentLoaded', function () {
+            var calendarEl = document.getElementById('calendar');
+
+            var calendar = new FullCalendar.Calendar(calendarEl, {
+                headerToolbar: {
+                    left: 'prev,next today',
+                    center: 'title',
+                    right: 'dayGridMonth,timeGridWeek,timeGridDay'
+                },
+                initialDate: '2020-09-12',
+                navLinks: true, // can click day/week names to navigate views
+                selectable: true,
+                selectMirror: true,
+                select: function (arg) {
+                    var title = prompt('Event Title:');
+                    if (title) {
+                        calendar.addEvent({
+                            title: title,
+                            start: arg.start,
+                            end: arg.end,
+                            allDay: arg.allDay
+                        })
+                    }
+                    calendar.unselect()
+                },
+                eventClick: function (arg) {
+                    if (confirm('Are you sure you want to delete this event?')) {
+                        arg.event.remove()
+                    }
+                },
+                editable: true,
+                dayMaxEvents: true, // allow "more" link when too many events
+                events: [
+                    {
+                        title: 'All Day Event',
+                        start: '2020-09-01'
+                    },
+                    {
+                        title: 'Long Event',
+                        start: '2020-09-07',
+                        end: '2020-09-10'
+                    },
+                    {
+                        groupId: 999,
+                        title: 'Repeating Event',
+                        start: '2020-09-09T16:00:00'
+                    },
+                    {
+                        groupId: 999,
+                        title: 'Repeating Event',
+                        start: '2020-09-16T16:00:00'
+                    },
+                    {
+                        title: 'Conference',
+                        start: '2020-09-11',
+                        end: '2020-09-13'
+                    },
+                    {
+                        title: 'Meeting',
+                        start: '2020-09-12T10:30:00',
+                        end: '2020-09-12T12:30:00'
+                    },
+                    {
+                        title: 'Lunch',
+                        start: '2020-09-12T12:00:00'
+                    },
+                    {
+                        title: 'Meeting',
+                        start: '2020-09-12T14:30:00'
+                    },
+                    {
+                        title: 'Happy Hour',
+                        start: '2020-09-12T17:30:00'
+                    },
+                    {
+                        title: 'Dinner',
+                        start: '2020-09-12T20:00:00'
+                    },
+                    {
+                        title: 'Birthday Party',
+                        start: '2020-09-13T07:00:00'
+                    },
+                    {
+                        title: 'Click for Google',
+                        url: 'http://google.com/',
+                        start: '2020-09-28'
+                    }
+                ]
+            });
+
+            calendar.render();
+        });
+
+    </script>
+
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-JZ7RFZ0TCP"></script>
@@ -97,12 +216,10 @@
     </center>
 
     <br>
-    <div id="calendar"></div>
-    <!-- Add jQuery library (required) -->
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+    <div id="cscale">
+        <div id="calendar"></div>
+    </div>
 
-    <!-- Add the evo-calendar.js for.. obviously, functionality! -->
-    <script src="https://cdn.jsdelivr.net/npm/evo-calendar@1.1.2/evo-calendar/js/evo-calendar.min.js"></script>
 </BODY>
 
 </HTML>
