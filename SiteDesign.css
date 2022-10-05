@@ -43,21 +43,21 @@ a {
 
 .Title {
     font-size: 2vw;
+    height: fit-content;
 }
 
-.HomeButtonTop {
+.DevButtonTop {
     border: none;
     border-radius: 0.3vw;
     outline: none;
     padding: 12px 16px;
-    left: 1.5%;
-    top: 3%;
+    right: 53.25%;
     width: 10%;
     background-color: #e38100;
     cursor: pointer;
     color: #dadada;
     font-weight: 600;
-    position: absolute;
+    position: relative;
 }
 
 .LoginButtonTop {
@@ -65,14 +65,13 @@ a {
     border-radius: 0.3vw;
     outline: none;
     padding: 12px 16px;
-    right: 1.5%;
-    top: 3%;
+    left: 25%;
     width: 10%;
     background-color: #e38100;
     cursor: pointer;
     color: #dadada;
     font-weight: 600;
-    position: absolute;
+    position: relative;
 }
 
 .BackgroundTitle {

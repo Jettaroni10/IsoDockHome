@@ -70,12 +70,6 @@ a {
   position: absolute;
 }
 
-.cscale {
-  position: absolute;
-  height: 10%;
-  scale: 0.5;
-}
-
 /* classes attached to <body> */
 /* TODO: make fc-event selector work when calender in shadow DOM */
 .fc-not-allowed,
@@ -101,7 +95,7 @@ a {
   background-color: #313131;
   flex-direction: column;
   font-family: 'Inder', sans-serif;
-  font-size: 1.5em;
+  font-size: 1.2em;
 }
 
 .fc,
@@ -119,6 +113,7 @@ a {
 }
 
 .fc th {
+
   text-align: center;
 }
 
@@ -148,6 +143,7 @@ a {
 
 .fc-theme-standard td,
 .fc-theme-standard th {
+
   border: 1px solid #ddd;
   border: 1px solid var(--fc-border-color, #ddd);
 }
@@ -157,6 +153,7 @@ a {
 /* TODO: best place for this? */
 .fc-liquid-hack td,
 .fc-liquid-hack th {
+
   position: relative;
 }
 
@@ -485,6 +482,7 @@ When it's NOT activated, the fc-button classes won't even be in the DOM.
 .fc .fc-scrollgrid table {
   /* all tables (self included) */
   width: 100%;
+
   /* because tables don't normally do this */
   table-layout: fixed;
 }
@@ -544,7 +542,6 @@ When it's NOT activated, the fc-button classes won't even be in the DOM.
 .fc .fc-scrollgrid-section-body table,
 .fc .fc-scrollgrid-section-footer table {
   border-bottom-style: hidden;
-  height: 10%;
   /* head keeps its bottom border tho */
 }
 
@@ -593,7 +590,7 @@ When it's NOT activated, the fc-button classes won't even be in the DOM.
   /* because this harness is WITHIN the .fc's flexbox */
   position: relative;
   font-family: 'Inder', sans-serif;
-  height: 10%;
+  height: 100%;
 }
 
 .fc {
