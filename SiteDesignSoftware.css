@@ -1,0 +1,144 @@
+body {
+    background: linear-gradient(217deg, rgba(142, 85, 59, 0.8), rgba(47, 21, 12, 0.8) 70.71%), linear-gradient(127deg, rgba(161, 161, 161, 0.8), rgba(156, 117, 33, 0.8) 70.71%), linear-gradient(336deg, rgba(212, 209, 203, 0.8), rgba(208, 208, 218, 0.8) 70.71%);
+    z-index: -1;
+}
+
+a {
+    color: #a8a8a8;
+    text-decoration: none;
+}
+
+
+.padding {
+    width: 300px;
+    height: 400px;
+}
+
+.Titlediv {
+    width: 100%;
+    border-radius: 5px;
+    margin: left;
+    font-family: 'Inder', sans-serif;
+    background: #5b5b5b;
+    border-bottom: 2px solid #f9951b;
+    transition: 3s;
+    color: #a8a8a8;
+    font-size: large;
+}
+
+.Title {
+    font-size: 2vw;
+
+}
+
+.BackgroundTitle {
+    width: 99%;
+    height: fit-content;
+    border-radius: 5px;
+    margin: left;
+    background: #313131;
+    border-bottom: 2px solid #f9951b;
+    transition: 3s;
+    color: #dbdbdb;
+    font-size: large;
+    position: relative;
+}
+
+.Subtitle {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 0 30%;
+    font-size: 0.6vw;
+    color: rgb(187, 187, 187);
+    letter-spacing: .05rem;
+}
+
+
+.HomeButtonTop {
+    border: none;
+    border-radius: 0.3vw;
+    outline: none;
+    padding: 12px 16px;
+    left: 0.5%;
+    top: 12%;
+    width: 10%;
+    background-color: #5a5a5a;
+    cursor: pointer;
+    color: #dadada;
+    font-weight: 600;
+    position: absolute;
+}
+
+
+
+.video {
+    position: absolute;
+    width: 99.25%;
+    z-index: -5;
+}
+
+.videoHolder {
+    display: block;
+    background-color: #00000099;
+    width: 99.25%;
+    height: 84.2%;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+}
+
+.SOON {
+    position: absolute;
+    top: 45%;
+    right: 42.5%;
+    font-size: 600%;
+    font-family: 'Courier New', Courier, monospace;
+    color: #dadada;
+}
+
+
+.snow,
+.snow:before,
+.snow:after {
+    position: absolute;
+    top: -650px;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-image:
+        radial-gradient(2px 2px at 100px 50px, #fff, transparent),
+        radial-gradient(3px 3px at 200px 150px, #fff, transparent),
+        radial-gradient(1px 1px at 300px 250px, #fff 50%, transparent),
+        radial-gradient(2px 2px at 400px 350px, #fff 50%, transparent),
+        radial-gradient(3px 3px at 500px 100px, #fff 50%, transparent),
+        radial-gradient(1px 1px at 50px 200px, #fff 50%, transparent),
+        radial-gradient(2px 2px at 150px 300px, #fff 50%, transparent),
+        radial-gradient(3px 3px at 250px 400px, #fff 50%, transparent),
+        radial-gradient(1px 1px at 350px 500px, #fff 50%, transparent);
+    background-size: 650px 650px;
+    animation: snow 3s linear infinite;
+    content: "";
+}
+
+.snow:after {
+    margin-left: -250px;
+    opacity: 0.5;
+    filter: blur(2px);
+    animation-duration: 6s;
+    animation-direction: reverse;
+}
+
+.snow:before {
+    margin-left: -350px;
+    opacity: 0.7;
+    filter: blur(1px);
+    animation-duration: 9s;
+    animation-direction: reverse;
+}
+
+@keyframes snow {
+    to {
+        transform: translateY(650px);
+    }
+}
