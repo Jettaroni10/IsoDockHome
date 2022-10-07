@@ -4,7 +4,6 @@ body {
         linear-gradient(127deg, rgba(161, 161, 161, 0.8), rgba(156, 117, 33, 0.8) 70.71%),
         linear-gradient(336deg, rgba(212, 209, 203, 0.8), rgba(208, 208, 218, 0.8) 70.71%);
 
-    padding: 0.5%;
 
 }
 
@@ -62,7 +61,7 @@ a {
     flex-direction: row;
     justify-content: space-around;
     margin: 0 30%;
-    font-size: 0.6vw;
+    font-size: 100%;
     color: rgb(187, 187, 187);
     letter-spacing: .05rem;
 }
@@ -77,8 +76,8 @@ a {
 
 
 .ToolLog {
-    width: 98.5%;
-    height: 73vh;
+    width: 99%;
+    height: 84%;
     border-radius: 5px;
     margin: right;
     background: #2a2a2a;
@@ -427,7 +426,8 @@ pre {
     font-family: 'Courier New', Courier, monospace;
     font-weight: 500;
     margin: 20px 0;
-    height: 65vh;
+    height: 80%;
+    width: 99%;
 }
 
 /* ###  Table wrap */

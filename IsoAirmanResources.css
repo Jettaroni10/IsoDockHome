@@ -70,7 +70,6 @@ ul {
     transition: 3s;
     color: #a8a8a8;
     font-size: large;
-    line-height: 1.4;
 }
 
 .Title {
@@ -95,7 +94,7 @@ ul {
     flex-direction: row;
     justify-content: space-around;
     margin: 0 30%;
-    font-size: 0.6vw;
+    font-size: 100%;
     color: rgb(187, 187, 187);
     letter-spacing: .05rem;
 }
