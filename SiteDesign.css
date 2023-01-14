@@ -36,7 +36,7 @@ a {
     font-family: 'Inder', sans-serif;
     background: #5b5b5b;
     border-bottom: 2px solid #f9951b;
-    transition: 3s;
+    transition: 0.5s;
     color: #a8a8a8;
     font-size: large;
 }
@@ -88,7 +88,7 @@ a {
     margin: left;
     background: #313131;
     border-bottom: 2px solid #f9951b;
-    transition: 3s;
+    transition: 0.5s;
     color: #dbdbdb;
     font-size: large;
 }
@@ -231,7 +231,7 @@ a {
     border-radius: 5px;
     margin: left;
     background: #313131;
-    transition: 3s;
+    transition: 0.5s;
     color: #dbdbdb;
     font-size: large;
     position: absolute;
@@ -247,7 +247,7 @@ a {
     height: fit-content;
     margin: left;
     background: #000000;
-    transition: 3s;
+    transition: 0.5s;
     color: #dbdbdbac;
     font-size: 1vw;
     position: absolute;
@@ -732,7 +732,7 @@ h2 {
 }
 
 #Notification:hover+#NotificationInfo {
-    transition: 2s;
+    transition: 0.5s;
     background: green;
 }
 
@@ -745,7 +745,7 @@ h2 {
     margin: left;
     border-radius: 5px;
     background: #313131;
-    transition: 3s;
+    transition: 0.5s;
     color: #f0a953;
     border: 2px solid #f9951b;
 }
@@ -755,7 +755,7 @@ h2 {
     margin: left;
     border-radius: 5px;
     background: #313131;
-    transition: 3s;
+    transition: 0.5s;
     color: #f0a953;
     font-size: large;
     border: 1px solid #f9951b;
@@ -920,7 +920,7 @@ a.button1 {
     background-image: url("https://assets.codepen.io/3305358/hazard-stripes-wallpaper.jpg");
     background-size: 150%;
     background-position: right 40px;
-    transition: 1s;
+    transition: 0.5s;
 }
 
 a.button1:before {
@@ -930,7 +930,7 @@ a.button1:before {
     background: rgba(0, 0, 0, 0.6);
     font-size: 1vw;
     position: absolute;
-    transition: 500ms;
+    transition: 0.5s;
 }
 
 a.button1:hover:before {
@@ -965,7 +965,7 @@ a.button1:focus {
     background-image: url("https://assets.codepen.io/3305358/hazard-stripes-wallpaper.jpg");
     background-size: 150%;
     background-position: right -5px;
-    transition: 1s;
+    transition: 0.5s;
 }
 
 .button2:before {
@@ -975,7 +975,7 @@ a.button1:focus {
     background: rgba(0, 0, 0, 0.6);
     font-size: 1vw;
     position: absolute;
-    transition: 500ms;
+    transition: 0.5s;
 }
 
 .button2:hover:before {
@@ -1010,7 +1010,7 @@ a.button1:focus {
     background-image: url("https://assets.codepen.io/3305358/hazard-stripes-wallpaper.jpg");
     background-size: 150%;
     background-position: right 25px;
-    transition: 1s;
+    transition: 0.5s;
 }
 
 .button3:before {
@@ -1020,7 +1020,7 @@ a.button1:focus {
     background: rgba(0, 0, 0, 0.6);
     font-size: 1vw;
     position: absolute;
-    transition: 500ms;
+    transition: 0.5s;
 }
 
 .button3:hover:before {
@@ -1055,7 +1055,7 @@ a.button1:focus {
     background-image: url("https://assets.codepen.io/3305358/hazard-stripes-wallpaper.jpg");
     background-size: 150%;
     background-position: right 55px;
-    transition: 1s;
+    transition: 0.5s;
 }
 
 .button4:before {
@@ -1065,7 +1065,7 @@ a.button1:focus {
     background: rgba(0, 0, 0, 0.6);
     font-size: 1vw;
     position: absolute;
-    transition: 500ms;
+    transition: 0.5s;
 }
 
 .button4:hover:before {
@@ -1100,7 +1100,7 @@ a.button1:focus {
     background-image: url("https://assets.codepen.io/3305358/hazard-stripes-wallpaper.jpg");
     background-size: 150%;
     background-position: right 5px;
-    transition: 1s;
+    transition: 0.5s;
 }
 
 .button5:before {
@@ -1110,7 +1110,7 @@ a.button1:focus {
     background: rgba(0, 0, 0, 0.6);
     font-size: 1vw;
     position: absolute;
-    transition: 500ms;
+    transition: 0.5s;
 }
 
 .button5:hover:before {
@@ -1145,7 +1145,7 @@ a.button1:focus {
     background-image: url("https://assets.codepen.io/3305358/hazard-stripes-wallpaper.jpg");
     background-size: 150%;
     background-position: right 35px;
-    transition: 1s;
+    transition: 0.5s;
 }
 
 .button6:before {
@@ -1154,7 +1154,7 @@ a.button1:focus {
     content: 'Mattermost';
     background: rgba(0, 0, 0, 0.6);
     position: absolute;
-    transition: 500ms;
+    transition: 0.5s;
     font-size: 1vw;
 }
 
@@ -1262,7 +1262,7 @@ a.button1:focus {
         border-radius: 5px;
         font-family: 'Inder', sans-serif;
         background: #1111114d;
-        transition: 3s;
+        transition: 0.5s;
         color: #a8a8a8;
         font-size: medium;
         position: fixed;
@@ -1321,7 +1321,7 @@ a.button1:focus {
         margin: left;
         background: #313131a2;
         border-bottom: 2px solid #86602e;
-        transition: 3s;
+        transition: 0.5s;
         color: #dbdbdb;
         font-size: large;
         backdrop-filter: blur(5px);
@@ -1510,7 +1510,7 @@ a.button1:focus {
         position: relative;
         border-radius: 5px;
         background: #313131;
-        transition: 3s;
+        transition: 0.5s;
         color: #dbdbdb;
         font-size: large;
         line-height: 1vh;
@@ -1544,7 +1544,7 @@ a.button1:focus {
         padding: 0.4%;
         height: fit-content;
         background: #000000ce;
-        transition: 3s;
+        transition: 0.5s;
         color: #dbdbdbac;
         font-size: 1vw;
         position: relative;
@@ -2053,7 +2053,7 @@ a.button1:focus {
     }
     
     #Notification:hover+#NotificationInfo {
-        transition: 2s;
+        transition: 0.5s;
         background: green;
     }
     
@@ -2068,7 +2068,7 @@ a.button1:focus {
         margin-top: 3%;
         border-radius: 5px;
         background: #313131a1;
-        transition: 3s;
+        transition: 0.5s;
         color: #f0a953;
         border: 2px solid #f9951b;
         backdrop-filter: blur(5px);
@@ -2079,7 +2079,7 @@ a.button1:focus {
         margin-top: 0%;
         border-radius: 5px;
         background: #3131319a;
-        transition: 3s;
+        transition: 0.5s;
         color: #f0a953;
         font-size: large;
         border: 1px solid #f9951b;
@@ -2245,7 +2245,7 @@ a.button1:focus {
         background: rgb(44, 44, 44);
         background-size: 150%;
         background-position: right 40px;
-        transition: 1s;
+        transition: 0.5s;
     }
     
     a.button1:before {
@@ -2255,7 +2255,7 @@ a.button1:focus {
         background: rgba(151, 151, 151, 0.6);
         font-size: 5vw;
         position: relative;
-        transition: 500ms;
+        transition: 0.5s;
     }
     
     a.button1:hover:before {
@@ -2291,7 +2291,7 @@ a.button1:focus {
         background: rgb(44, 44, 44);
                 background-size: 150%;
         background-position: right 40px;
-        transition: 1s;
+        transition: 0.5s;
     }
     
     .button2:before {
@@ -2301,7 +2301,7 @@ a.button1:focus {
         background: rgba(151, 151, 151, 0.6);
         font-size: 5vw;
         position: relative;
-        transition: 500ms;
+        transition: 0.5s;
     }
     
     .button2:hover:before {
@@ -2337,7 +2337,7 @@ a.button1:focus {
         background: rgb(44, 44, 44);
                 background-size: 150%;
         background-position: right 40px;
-        transition: 1s;
+        transition: 0.5s;
     }
     
     .button3:before {
@@ -2347,7 +2347,7 @@ a.button1:focus {
         background: rgba(151, 151, 151, 0.6);
         font-size: 5vw;
         position: relative;
-        transition: 500ms;
+        transition: 0.5s;
     }
     
     .button3:hover:before {
@@ -2383,7 +2383,7 @@ a.button1:focus {
         background: rgb(44, 44, 44);
                 background-size: 150%;
         background-position: right 40px;
-        transition: 1s;
+        transition: 0.5s;
     }
     
     .button4:before {
@@ -2393,7 +2393,7 @@ a.button1:focus {
         background: rgba(151, 151, 151, 0.6);
         font-size: 5vw;
         position: relative;
-        transition: 500ms;
+        transition: 0.5s;
     }
     
     .button4:hover:before {
@@ -2429,7 +2429,7 @@ a.button1:focus {
         background: rgb(44, 44, 44);
                 background-size: 150%;
         background-position: right 40px;
-        transition: 1s;
+        transition: 0.5s;
     }
     
     .button5:before {
@@ -2439,7 +2439,7 @@ a.button1:focus {
         background: rgba(151, 151, 151, 0.6);
         font-size: 5vw;
         position: relative;
-        transition: 500ms;
+        transition: 0.5s;
     }
     
     .button5:hover:before {
@@ -2475,7 +2475,7 @@ a.button1:focus {
         background: rgb(44, 44, 44);
                 background-size: 150%;
         background-position: right 40px;
-        transition: 1s;
+        transition: 0.5s;
     }
     
     .button6:before {
@@ -2485,7 +2485,7 @@ a.button1:focus {
         background: rgba(151, 151, 151, 0.6);
         font-size: 5vw;
         position: relative;
-        transition: 500ms;
+        transition: 0.5s;
     }
     
     .button6:hover:before {
