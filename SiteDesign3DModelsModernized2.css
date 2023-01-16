@@ -387,7 +387,7 @@ ul {
     }
     
     a {
-        color: #a8a8a8;
+        color: #ffffff;
         text-decoration: none;
     }
     
@@ -465,7 +465,7 @@ ul {
         top: 0%;
         left: 0px;
         backdrop-filter: blur(10px);
-        height: 18.5%;
+        height:fit-content;
     }
     
     .Title {
@@ -504,7 +504,8 @@ ul {
 
     .AFPortal {
         display: block;
-        background-color: #413b34;
+        background-color: #52b1ff88;
+        border-radius: 5px;
         padding: 3%;
         margin-right:3%;
         margin-left:3%;
@@ -513,7 +514,8 @@ ul {
 
     .vMPF {
         display: block;
-        background-color: #413b34;
+        background-color: #52b1ff88;
+        border-radius: 5px;
         padding: 3%;
         margin-right:3%;
         margin-left:3%;
@@ -521,26 +523,32 @@ ul {
 
     .MyFSS {
         display: block;
-        background-color: #413b34;
+        background-color: #52b1ff88;
+        border-radius: 5px;
         padding: 3%;
         margin-right:3%;
         margin-left:3%;
+        color: #413b34;
     }
 
     .Leaveweb {
         display: block;
-        background-color: #413b34;
+        background-color: #52b1ff88;
+        border-radius: 5px;
         padding: 3%;
         margin-right:3%;
         margin-left:3%;
+        color: #202020;
     }
 
     .G081 {
         display: block;
-        background-color: #413b34;
+        background-color: #52b1ff88;
+        border-radius: 5px;
         padding: 3%;
         margin-right:3%;
         margin-left:3%;
+
     }
     
     /* (A) SEARCH BOX */
