@@ -98,12 +98,28 @@
 
     <br>
 
-    <div class="videoHolder">
-        <div class="snow"></div>
-        <div class="SOON">
-            <center>
-                SOON.
-            </center>
+    <div class="container">
+        <div class="tabs">
+            <div class="tab" onclick="openSection(event, 'downloads')">Downloads</div>
+            <div class="tab" onclick="openSection(event, 'news')">News/Updates</div>
+            <div class="tab" onclick="openSection(event, 'preview')">Preview</div>
+        </div>
+        <div class="content">
+            <div id="downloads" class="tab-content">
+                <!-- Add your download section content here -->
+                <h2>Downloads</h2>
+                <p>Content related to downloads goes here.</p>
+            </div>
+            <div id="news" class="tab-content">
+                <!-- Add your news/updates section content here -->
+                <h2>News/Updates</h2>
+                <p>Content related to news and updates goes here.</p>
+            </div>
+            <div id="preview" class="tab-content">
+                <!-- Add your preview section content here -->
+                <h2>Preview</h2>
+                <p>Content related to preview goes here.</p>
+            </div>
         </div>
     </div>
 
