@@ -143,3 +143,42 @@ a {
         transform: translateY(650px);
     }
 }
+
+/* Add your existing styles here */
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.tabs {
+    display: flex;
+    justify-content: space-between;
+    background-color: #f9951b;
+    color: #323232;
+    padding: 10px;
+}
+
+.tab {
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.tab:hover {
+    background-color: #a8a8a8;
+    color: #0b0b0b;
+}
+
+.tab-content {
+    display: none;
+    padding: 20px;
+    background-color: #0b0b0b;
+    color: #a8a8a8;
+}
+
+/* Add more styles for tab content as needed */
+
+/* Show the active tab */
+.tab-content.active {
+    display: block;
+}
